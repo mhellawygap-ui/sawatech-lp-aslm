@@ -1,0 +1,464 @@
+<title>SawaTech ASLM 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* =====================================================================
+   SawaTech × ASLM 2026 — static preview
+   Tokens = SawaTech brand guideline ("Color Usage in Website") +
+   live-site Elementor kit (post-9.css): Poppins, 15px card radius,
+   pill buttons, 1200px boxed container, 1024 / 767 breakpoints.
+   ===================================================================== */
+:root{
+  --st-primary:#4F2F6D;      /* live-site primary (Elementor global el_color_2) */
+  --st-primary-hover:#5E3A80;
+  --st-primary-press:#3F2557;
+  --st-primary-50:#EDE4F5;   /* live-site el_color_2_3 */
+  --st-amber:#FCB900;        /* secondary accent — sparingly */
+  --st-amber-ink:#8A6100;
+  --st-cyan:#1AC8DB;         /* tertiary — occasional graphic accent */
+  --st-offwhite:#F5F5F5;
+  --st-black:#191919;        /* headings / text-heading */
+  --st-body:#333333;
+  --st-muted:#5C5C5C;
+  --st-border:#E3E3E3;
+  --st-white:#FFFFFF;
+  --radius-card:15px;        /* live site card radius */
+  --radius-pill:100px;       /* live site button radius */
+  --shadow-card:0 0 20px rgba(0,0,0,.08);
+  --container:1200px;
+  --gutter:24px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--st-white);color:var(--st-body);font:400 16px/1.7 "Poppins",system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3{font-family:"Poppins",sans-serif;color:var(--st-black);margin:0}
+p{margin:0}
+a{color:var(--st-primary)}
+:focus-visible{outline:3px solid var(--st-black);outline-offset:3px}
+.on-dark :focus-visible{outline-color:var(--st-white)}
+.container{max-width:var(--container);margin:0 auto;padding:0 var(--gutter)}
+.visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* preview ribbon (not part of the WordPress build) */
+.preview-ribbon{background:var(--st-black);color:#fff;font-size:13px;line-height:1.4;padding:8px var(--gutter);text-align:center}
+.preview-ribbon strong{color:var(--st-amber)}
+
+/* ---------- Buttons: live-site pill style ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 30px;border-radius:var(--radius-pill);font:600 16px/1.2 "Poppins",sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn--light{background:var(--st-white);color:var(--st-primary);border-color:var(--st-white)}
+.btn--light:hover{background:var(--st-primary-50)}
+.btn--primary{background:var(--st-primary);color:var(--st-white);border-color:var(--st-primary)}
+.btn--primary:hover{background:var(--st-primary-hover);border-color:var(--st-primary-hover)}
+.btn--primary:active{background:var(--st-primary-press)}
+.btn--sm{min-height:42px;padding:9px 20px;font-size:14px}
+
+/* ---------- Header ---------- */
+.site-header{position:absolute;inset:auto 0 auto 0;z-index:5}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:84px}
+.site-header img{width:168px}
+@media (max-width:767px){.site-header .btn{display:none}.site-header img{width:140px}.site-header .container{min-height:68px}}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;overflow:hidden;color:#fff;
+  background:var(--st-primary-press) url("assets/layered-waves-bg-03.svg") center/cover no-repeat;}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(46,27,64,.94) 0%,rgba(63,37,87,.80) 55%,rgba(63,37,87,.35) 100%)}
+.hero .container{position:relative;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;padding-top:124px;padding-bottom:72px}
+.eyebrow{display:inline-block;font:600 13px/1.4 "Poppins",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.hero .eyebrow{color:var(--st-amber);margin-bottom:18px}
+.hero h1{color:#fff;font-weight:700;font-size:48px;line-height:1.2;letter-spacing:-.01em;max-width:15ch}
+.hero__lead{margin-top:20px;font-size:17px;line-height:1.7;color:rgba(255,255,255,.88);max-width:56ch}
+.hero__event{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-top:24px;font:500 15px/1.4 "Poppins",sans-serif;color:#fff}
+.hero__event span{display:inline-flex;align-items:center;gap:8px}
+.hero__event svg{width:18px;height:18px;color:var(--st-amber);flex:none}
+.hero__cta{margin-top:32px}
+.hero__media{justify-self:end;width:100%;max-width:500px}
+@media (max-width:1024px){
+  .hero h1{font-size:40px}
+  .hero .container{gap:24px}
+}
+@media (max-width:767px){
+  .hero .container{grid-template-columns:1fr;padding-top:88px;padding-bottom:40px;gap:20px}
+  .hero h1{font-size:30px;line-height:1.25}
+  .hero__lead{font-size:15.5px;margin-top:14px}
+  .hero__event{font-size:14px;margin-top:16px}
+  .hero__cta{margin-top:22px}
+  .hero__cta .btn{width:100%}
+  .hero__media{justify-self:center;max-width:200px;margin:4px 0 -20px}
+  .hero h1{font-size:28px}
+}
+
+/* ---------- Sections ---------- */
+.section{padding:96px 0}
+.section--tint{background:var(--st-primary-50)}
+.section--off{background:var(--st-offwhite)}
+.section__head{max-width:760px;margin:0 auto 48px;text-align:center}
+.section__head h2{color:var(--st-primary);font-weight:600;font-size:40px;line-height:1.3}
+.section__head p{margin-top:14px;font-size:17px;color:var(--st-muted)}
+.section__head .kicker{display:block;margin-top:10px;font:500 20px/1.4 "Poppins",sans-serif;color:var(--st-black)}
+@media (max-width:1024px){.section{padding:72px 0}.section__head h2{font-size:32px}}
+@media (max-width:767px){.section{padding:56px 0}.section__head{margin-bottom:32px}.section__head h2{font-size:26px}.section__head p{font-size:15.5px}.section__head .kicker{font-size:17px}}
+
+/* Capability cards (white cards, purple icon tile) */
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+@media (max-width:1024px){.grid-4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:767px){.grid-4{grid-template-columns:1fr;gap:16px}}
+.cap-card{background:#fff;border:1px solid var(--st-border);border-radius:var(--radius-card);padding:28px 24px;box-shadow:var(--shadow-card)}
+.icon-tile{width:56px;height:56px;border-radius:14px;background:var(--st-primary);color:#fff;display:grid;place-items:center;margin-bottom:18px}
+.icon-tile svg{width:28px;height:28px}
+.cap-card h3{font-weight:600;font-size:19px;line-height:1.35;margin-bottom:10px}
+.cap-card p{font-size:15px;line-height:1.65;color:var(--st-muted)}
+@media (max-width:767px){.cap-card{display:grid;grid-template-columns:48px 1fr;column-gap:16px;padding:20px}.cap-card .icon-tile{width:48px;height:48px;margin:0;grid-row:span 2}.cap-card .icon-tile svg{width:24px;height:24px}.cap-card h3{font-size:17px;margin-bottom:4px}}
+
+/* Proof */
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.metric{background:var(--st-primary);color:#fff;border-radius:var(--radius-card);padding:32px 24px;text-align:center;box-shadow:var(--shadow-card)}
+.metric__value{display:block;font:700 52px/1.1 "Poppins",sans-serif;letter-spacing:-.01em}
+.metric__label{display:block;margin-top:10px;font:500 16px/1.4 "Poppins",sans-serif;color:rgba(255,255,255,.88)}
+.metric__value small{font-size:.5em;font-weight:600;margin-left:4px}
+.proof__copy{max-width:780px;margin:40px auto 0;text-align:center;font-size:16.5px}
+.proof__copy p+p{margin-top:12px}
+.proof__copy strong{color:var(--st-black);font-weight:600}
+.workflow{list-style:none;padding:0;margin:40px auto 0;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;max-width:900px}
+.workflow li{display:flex;align-items:center;gap:12px;font:500 15px/1.3 "Poppins",sans-serif;color:var(--st-black)}
+.workflow .step{background:#fff;border:1.5px solid var(--st-primary);border-radius:var(--radius-pill);padding:10px 20px;white-space:nowrap}
+.workflow .step b{color:var(--st-primary);font-weight:700;margin-right:6px}
+.workflow .arrow{color:var(--st-primary);width:20px;height:20px;flex:none}
+.anon-note{margin-top:18px;text-align:center;font-size:13px;color:var(--st-muted)}
+@media (max-width:767px){
+  .metrics{grid-template-columns:1fr;gap:12px}
+  .metric{display:flex;align-items:baseline;gap:14px;text-align:left;padding:18px 22px}
+  .metric__value{font-size:36px;min-width:6.2ch}
+  .metric__label{margin:0;font-size:15px}
+  .proof__copy{margin-top:28px;text-align:left;font-size:15.5px}
+  .workflow{flex-direction:column;align-items:stretch;gap:6px;margin-top:28px}
+  .workflow li{flex-direction:column;gap:6px}
+  .workflow .step{width:100%;text-align:center}
+  .workflow .arrow{transform:rotate(90deg)}
+}
+
+/* Why — purple cards (mirrors live "Why Choose Sawatech" block) */
+.why-card{background:var(--st-primary);color:#fff;border-radius:var(--radius-card);padding:28px 24px;box-shadow:0 0 20px rgba(0,0,0,.12)}
+.why-card .icon-tile{background:rgba(255,255,255,.14);color:#fff}
+.why-card h3{color:#fff;font-weight:600;font-size:19px;line-height:1.35;margin-bottom:10px}
+.why-card p{font-size:15px;line-height:1.65;color:rgba(255,255,255,.88)}
+.iso-row{display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;margin-top:44px}
+.iso-row img{width:96px;height:96px;object-fit:contain}
+.iso-caption{margin-top:14px;text-align:center;font-size:13px;color:var(--st-muted)}
+@media (max-width:767px){.why-card{display:grid;grid-template-columns:48px 1fr;column-gap:16px;padding:20px}.why-card .icon-tile{width:48px;height:48px;margin:0;grid-row:span 2}.why-card .icon-tile svg{width:24px;height:24px}.why-card h3{font-size:17px;margin-bottom:4px}.iso-row{gap:16px;margin-top:32px}.iso-row img{width:76px;height:76px}}
+
+/* Form */
+.form-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+.form-intro h2{color:var(--st-primary);font-weight:600;font-size:40px;line-height:1.3}
+.form-intro p{margin-top:16px;font-size:17px;color:var(--st-body)}
+.form-intro ul{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:12px}
+.form-intro li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--st-body)}
+.form-intro li svg{width:22px;height:22px;color:var(--st-primary);flex:none;margin-top:2px}
+.form-card{background:#fff;border-radius:var(--radius-card);padding:36px;box-shadow:0 0 30px rgba(0,0,0,.10);border-top:4px solid var(--st-primary)}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+label,.label{font:500 14px/1.4 "Poppins",sans-serif;color:var(--st-black)}
+.req{color:#B3261E;margin-left:2px}
+.opt{color:var(--st-muted);font-weight:400}
+input[type=text],input[type=email],select,textarea{width:100%;font:400 15px/1.5 "Poppins",sans-serif;color:var(--st-black);background:#fff;border:1px solid #BDBDBD;border-radius:8px;padding:12px 14px;min-height:48px;transition:border-color .15s,box-shadow .15s}
+textarea{min-height:104px;resize:vertical}
+select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234F2F6D' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:40px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--st-primary);box-shadow:0 0 0 3px rgba(79,47,109,.25)}
+[aria-invalid=true]{border-color:#B3261E!important}
+.err{display:none;font-size:13px;color:#B3261E}
+.field.has-error .err{display:block}
+.consent{display:flex;gap:12px;align-items:flex-start;margin:6px 0 20px;font-size:13.5px;line-height:1.55;color:var(--st-body)}
+.consent input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--st-primary);flex:none}
+.consent.has-error{color:#B3261E}
+.form-card .btn{width:100%}
+.privacy-note{margin-top:14px;font-size:12.5px;line-height:1.55;color:var(--st-muted)}
+.form-status{border-radius:10px;padding:16px 18px;font-size:15px;margin-bottom:18px}
+.form-status--ok{background:#E8F5EC;color:#14532D;border:1px solid #A7D7B4}
+.form-status--err{background:#FDECEA;color:#8C1D18;border:1px solid #F3B4AE}
+.preview-tag{display:inline-block;margin-bottom:18px;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--st-amber-ink);background:#FFF6D6;border:1px solid #F5DC85;border-radius:6px;padding:4px 10px}
+@media (max-width:1024px){.form-wrap{grid-template-columns:1fr;gap:32px}.form-intro h2{font-size:32px}}
+@media (max-width:767px){.form-intro h2{font-size:26px}.form-intro p{font-size:15.5px}.form-card{padding:22px 18px}.field-row{grid-template-columns:1fr}}
+
+/* Footer — live footer uses the brand purple band */
+.site-footer{background:var(--st-primary);color:rgba(255,255,255,.88);font-size:14px}
+.site-footer .container{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:36px;padding-bottom:36px}
+.site-footer img{width:150px}
+.site-footer nav{display:flex;flex-wrap:wrap;gap:8px 24px}
+.site-footer a{color:#fff;text-decoration:none}
+.site-footer a:hover{text-decoration:underline}
+.site-footer small{width:100%;border-top:1px solid rgba(255,255,255,.2);padding-top:18px;font-size:13px;color:rgba(255,255,255,.75)}
+@media (max-width:767px){.site-footer .container{flex-direction:column;align-items:flex-start}}
+</style>
+
+
+<div class="preview-ribbon" role="note"><strong>PREVIEW</strong> — static review copy. The form is simulated and is not connected to Elementor Pro.</div>
+
+<!-- ===== Minimal header ===== -->
+<header class="site-header on-dark">
+  <div class="container">
+    <a href="https://sawa-tech.com/" aria-label="SawaTech home">
+      <img src="assets/sawatech-Logo-WHITE-300x60.png" srcset="assets/sawatech-Logo-WHITE-300x60.png 300w, assets/sawatech-Logo-WHITE-768x154.png 768w" sizes="168px" width="300" height="60" alt="SawaTech">
+    </a>
+    <a class="btn btn--light btn--sm js-cta" href="#discuss" data-cta="header">Discuss Your Localization Needs</a>
+  </div>
+</header>
+
+<main>
+<!-- ===== 1. HERO ===== -->
+<section class="hero on-dark" aria-labelledby="hero-title">
+  <div class="container">
+    <div class="hero__text">
+      <span class="eyebrow">SawaTech at ASLM 2026</span>
+      <h1 id="hero-title">Clear Communication. Stronger Health Outcomes Across Africa.</h1>
+      <p class="hero__lead">From clinical research documentation to laboratory materials and patient communications, SawaTech helps life sciences and healthcare organizations deliver accurate, culturally appropriate multilingual content across African and Middle Eastern markets.</p>
+      <p class="hero__event">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>ASLM 2026 | 8–11 December</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Cape Town, South Africa</span>
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--light js-cta" href="#discuss" data-cta="hero">Discuss Your Localization Needs
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+      </div>
+    </div>
+    <div class="hero__media">
+      <img src="assets/1-Healthcare-Translation-Services-That-Put-Patient-Safety-First.webp"
+           width="1200" height="1200" fetchpriority="high"
+           alt="Healthcare professional in a white coat holding a clipboard, representing accurate healthcare translation">
+    </div>
+  </div>
+</section>
+
+<!-- ===== 2. CAPABILITIES ===== -->
+<section class="section" aria-labelledby="cap-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 id="cap-title">Specialized Language Support for Life Sciences</h2>
+      <p>Supporting organizations that need precise, consistent and locally relevant communication throughout research, healthcare delivery and market expansion.</p>
+    </div>
+    <div class="grid-4">
+      <article class="cap-card">
+        <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 11v6M9 14h6"/></svg></div>
+        <h3>Clinical Research</h3>
+        <p>Protocols, informed consent forms, clinical trial documents, case report forms and patient-facing study materials.</p>
+      </article>
+      <article class="cap-card">
+        <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3h6M10 3v6L4.5 18.5A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.5-2.5L14 9V3"/><path d="M7 15h10"/></svg></div>
+        <h3>Laboratory &amp; Healthcare</h3>
+        <p>Laboratory documentation, SOPs, research reports, training content and healthcare communications.</p>
+      </article>
+      <article class="cap-card">
+        <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/><path d="M10 12h4"/></svg></div>
+        <h3>Medical Devices &amp; Technology</h3>
+        <p>Instructions for use, device manuals, labeling, software interfaces and technical documentation.</p>
+      </article>
+      <article class="cap-card">
+        <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 6.5M18.5 14a6.5 6.5 0 0 1 3 6"/></svg></div>
+        <h3>Patient &amp; Public Health Communication</h3>
+        <p>Patient education, outreach materials, multilingual training and culturally adapted health information.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. PROOF ===== -->
+<section class="section section--tint" aria-labelledby="proof-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 id="proof-title">800,000 Words. One Critical Timeline.</h2>
+      <span class="kicker">Clinical Trial Localization into Swahili</span>
+    </div>
+    <div class="metrics">
+      <div class="metric"><span class="metric__value">800,000</span><span class="metric__label">words localized</span></div>
+      <div class="metric"><span class="metric__value">1.5<small>months</small></span><span class="metric__label">delivery timeline</span></div>
+      <div class="metric"><span class="metric__value">100%</span><span class="metric__label">reported on-time delivery</span></div>
+    </div>
+    <div class="proof__copy">
+      <p>For a leading global healthcare organization, SawaTech coordinated a team of Swahili language specialists through a centralized memoQ workflow, shared terminology resources, and structured translation, editing and proofreading processes.</p>
+      <p><strong>The result:</strong> consistent terminology and large-scale clinical content delivery within a demanding schedule.</p>
+    </div>
+    <ol class="workflow" aria-label="Project workflow">
+      <li><span class="step"><b>1</b>Translation</span><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+      <li><span class="step"><b>2</b>Editing</span><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+      <li><span class="step"><b>3</b>Proofreading / QA</span><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+      <li><span class="step"><b>4</b>Delivery</span></li>
+    </ol>
+    <p class="anon-note">Client name withheld for confidentiality.</p>
+  </div>
+</section>
+
+<!-- ===== 4. WHY SAWATECH ===== -->
+<section class="section" aria-labelledby="why-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 id="why-title">African Language Expertise. Structured Quality.</h2>
+    </div>
+    <div class="grid-4">
+      <article class="why-card">
+        <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+        <h3>Regional Language Expertise</h3>
+        <p>Native-speaking linguists with strong African and Middle Eastern language capabilities.</p>
+      </article>
+      <article class="why-card">
+        <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h11v8H9l-5 4z"/><path d="M15 9h5v8l-3-2.5h-6V13"/></svg></div>
+        <h3>Specialized Linguistic Teams</h3>
+        <p>Experienced resources for technical, clinical and healthcare-related content.</p>
+      </article>
+      <article class="why-card">
+        <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="M9 14.5 7.5 22l4.5-2.5 4.5 2.5L15 14.5"/><path d="m9.5 9 1.8 1.8L14.8 7.5"/></svg></div>
+        <h3>ISO-Certified Processes</h3>
+        <p>Quality-oriented workflows certified to ISO 17100, ISO 9001 and ISO 18587.</p>
+      </article>
+      <article class="why-card">
+        <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="7" r="3"/><path d="M3 19a5 5 0 0 1 10 0"/><rect x="14" y="10" width="7" height="7" rx="1.5"/><path d="M16 10V8M19 10V8M16 19v-2M19 19v-2"/></svg></div>
+        <h3>Human Expertise + Technology</h3>
+        <p>Terminology management, translation memories, QA and appropriately governed technology-assisted processes.</p>
+      </article>
+    </div>
+    <div class="iso-row">
+      <img src="assets/iso-17100-2015.webp" width="96" height="96" loading="lazy" alt="ISO 17100:2015 certified — translation services">
+      <img src="assets/iso-9001-2015.webp" width="96" height="96" loading="lazy" alt="ISO 9001:2015 certified — quality management">
+      <img src="assets/iso-18587-2017.webp" width="96" height="96" loading="lazy" alt="ISO 18587:2017 certified — machine translation post-editing">
+    </div>
+    <p class="iso-caption">Language-services certifications. They do not constitute clinical, laboratory or regulatory accreditation.</p>
+  </div>
+</section>
+
+<!-- ===== 5. FORM ===== -->
+<section class="section section--off" id="discuss" aria-labelledby="form-title" tabindex="-1">
+  <div class="container form-wrap">
+    <div class="form-intro">
+      <h2 id="form-title">Let's Discuss Your Multilingual Project</h2>
+      <p>Meeting us at ASLM 2026 or exploring opportunities online? Tell us briefly what you need, and our team will follow up.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>Takes under a minute: five short fields</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>Your details are used only to respond to your request</li>
+      </ul>
+    </div>
+
+    <div class="form-card">
+      <span class="preview-tag">Preview form — simulated</span>
+      <div id="form-status" role="status" aria-live="polite"></div>
+      <form id="sawatech_aslm2026" name="SawaTech ASLM 2026" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="form-field-full_name">Full Name<span class="req" aria-hidden="true">*</span></label>
+            <input id="form-field-full_name" name="form_fields[full_name]" type="text" autocomplete="name" required aria-describedby="err-full_name">
+            <span class="err" id="err-full_name">Please enter your full name.</span>
+          </div>
+          <div class="field">
+            <label for="form-field-business_email">Business Email<span class="req" aria-hidden="true">*</span></label>
+            <input id="form-field-business_email" name="form_fields[business_email]" type="email" autocomplete="email" required aria-describedby="err-business_email">
+            <span class="err" id="err-business_email">Please enter a valid email address.</span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="form-field-organization">Company / Organization<span class="req" aria-hidden="true">*</span></label>
+          <input id="form-field-organization" name="form_fields[organization]" type="text" autocomplete="organization" required aria-describedby="err-organization">
+          <span class="err" id="err-organization">Please enter your company or organization.</span>
+        </div>
+        <div class="field">
+          <label for="form-field-service_need">What Do You Need?<span class="req" aria-hidden="true">*</span></label>
+          <select id="form-field-service_need" name="form_fields[service_need]" required aria-describedby="err-service_need">
+            <option value="">Select an option</option>
+            <option>Clinical Research Translation</option>
+            <option>Laboratory &amp; Medical Documentation</option>
+            <option>Medical Device Localization</option>
+            <option>Patient / Public Health Communication</option>
+            <option>Other Localization Requirements</option>
+          </select>
+          <span class="err" id="err-service_need">Please choose what you need.</span>
+        </div>
+        <div class="field">
+          <label for="form-field-project_details">Brief Project Details <span class="opt">(optional)</span></label>
+          <textarea id="form-field-project_details" name="form_fields[project_details]" rows="4" placeholder="Languages, content type, volume or timing, if known"></textarea>
+        </div>
+
+        <!-- Hidden attribution fields (mirrors Elementor hidden fields) -->
+        <input type="hidden" name="form_fields[utm_source]" id="form-field-utm_source">
+        <input type="hidden" name="form_fields[utm_medium]" id="form-field-utm_medium">
+        <input type="hidden" name="form_fields[utm_campaign]" id="form-field-utm_campaign">
+        <input type="hidden" name="form_fields[utm_content]" id="form-field-utm_content">
+        <input type="hidden" name="form_fields[utm_term]" id="form-field-utm_term">
+        <input type="hidden" name="form_fields[lead_source]" id="form-field-lead_source">
+        <input type="hidden" name="form_fields[landing_page]" id="form-field-landing_page">
+
+        <div class="consent" id="consent-wrap">
+          <input id="form-field-privacy_consent" name="form_fields[privacy_consent]" type="checkbox" required aria-describedby="err-privacy_consent">
+          <label for="form-field-privacy_consent" style="font-weight:400;font-size:13.5px">I agree that SawaTech may store and use my details to respond to this request, as described in the <a href="https://sawa-tech.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>.<span class="req" aria-hidden="true">*</span></label>
+        </div>
+        <span class="err" id="err-privacy_consent" style="margin:-12px 0 16px">Please confirm consent so we can respond.</span>
+
+        <button type="submit" class="btn btn--primary">Discuss Your Localization Needs</button>
+        <p class="privacy-note">We use your information only to follow up on this enquiry. We do not sell your data. You can ask us to delete it at any time.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== 6. MINIMAL FOOTER ===== -->
+<footer class="site-footer on-dark">
+  <div class="container">
+    <img src="assets/sawatech-Logo-WHITE-300x60.png" width="300" height="60" alt="SawaTech" loading="lazy">
+    <nav aria-label="Footer">
+      <a href="https://sawa-tech.com/">sawa-tech.com</a>
+      <span>support@sawa-tech.net</span>
+      <a href="https://sawa-tech.com/privacy-policy/">Privacy Policy</a>
+    </nav>
+    <small>© <span id="yr">2026</span> SawaTech. All rights reserved.</small>
+  </div>
+</footer>
+
+<script>
+/* ------------------------------------------------------------------
+   PREVIEW BEHAVIOUR ONLY.
+   1) UTM capture: same logic as the Elementor Custom Code snippet.
+   2) Simulated submit: validates, shows success, pushes generate_lead
+      to dataLayer (no personal data). On WordPress, Elementor Pro handles
+      validation, submission, email and storage natively.
+   ------------------------------------------------------------------ */
+(function(){
+  var KEYS=['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+  var STORE='st_aslm2026_attr';
+  var qs=new URLSearchParams(location.search), attr={}, hasNew=KEYS.some(function(k){return qs.get(k);});
+  try{
+    if(hasNew){KEYS.forEach(function(k){attr[k]=(qs.get(k)||'').slice(0,100);});sessionStorage.setItem(STORE,JSON.stringify(attr));}
+    else{attr=JSON.parse(sessionStorage.getItem(STORE)||'{}');}
+  }catch(e){if(hasNew){KEYS.forEach(function(k){attr[k]=(qs.get(k)||'').slice(0,100);});}}
+  KEYS.forEach(function(k){var el=document.getElementById('form-field-'+k);if(el)el.value=attr[k]||'';});
+  var src=(attr.utm_medium==='qr')?'booth_qr':(attr.utm_source?attr.utm_source:'direct');
+  document.getElementById('form-field-lead_source').value=src;
+  document.getElementById('form-field-landing_page').value=location.origin+location.pathname;
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  var form=document.getElementById('sawatech_aslm2026'), status=document.getElementById('form-status');
+  function setErr(input,on){
+    var wrap=input.type==='checkbox'?document.getElementById('consent-wrap'):input.closest('.field');
+    input.setAttribute('aria-invalid',on?'true':'false');
+    wrap.classList.toggle('has-error',on);
+    if(input.type==='checkbox'){document.getElementById('err-privacy_consent').style.display=on?'block':'none';}
+  }
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var first=null;
+    form.querySelectorAll('[required]').forEach(function(f){
+      var bad=f.type==='checkbox'?!f.checked:(!f.value.trim()||(f.type==='email'&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value.trim())));
+      setErr(f,bad); if(bad&&!first)first=f;
+    });
+    if(first){first.focus();status.innerHTML='<div class="form-status form-status--err">Please complete the highlighted fields.</div>';return;}
+    status.innerHTML='<div class="form-status form-status--ok">Thank you for contacting SawaTech. Our team has received your request and will be in touch.</div>';
+    form.hidden=true;
+    window.dataLayer=window.dataLayer||[];
+    window.dataLayer.push({event:'generate_lead',form_id:'sawatech_aslm2026',lead_source:src,
+      utm_source:attr.utm_source||'',utm_medium:attr.utm_medium||'',utm_campaign:attr.utm_campaign||''});
+    status.scrollIntoView({block:'center'});
+  });
+  form.querySelectorAll('[required]').forEach(function(f){
+    f.addEventListener(f.type==='checkbox'?'change':'input',function(){if(f.getAttribute('aria-invalid')==='true')setErr(f,false);});
+  });
+})();
+</script>

@@ -10,3 +10,9 @@ Conversion landing page for SawaTech's participation in ASLM 2026 (8–11 Decemb
 | `IMPLEMENTATION-NOTES.md` | Design audit, assets, WordPress admin settings, form and tracking setup, build spec, QA checklist. |
 
 Target URL: `https://sawa-tech.com/aslm-2026/`
+
+## Online review copy
+
+`_artifact/` is the version of the preview published as a private claude.ai artifact
+(https://claude.ai/artifact/MPMDgptewTjxDLYgEX1iRJ). The images are bundled locally because the artifact viewer blocks images from other sites.
+Republish it from `_artifact/index.html` with the same `assets/` files.
