@@ -287,6 +287,34 @@ a{color:var(--st-primary)}
 @media (max-width:1024px){.grid-3{grid-template-columns:1fr;max-width:640px;margin:0 auto}}
 @media (max-width:767px){.quote-card{padding:24px 20px 22px}.quote-card__mark{width:34px;height:34px}.quote-card blockquote{font-size:15px}}
 
+/* ---------- Case-study download pop-up ---------- */
+.gate{width:min(560px,calc(100% - 32px));max-height:calc(100dvh - 32px);padding:0;border:0;border-radius:var(--radius-card);background:#fff;color:var(--st-body);box-shadow:0 24px 60px rgba(25,15,35,.35);overflow:auto;overscroll-behavior:contain}
+.gate::backdrop{background:rgba(30,17,42,.62);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+.gate[open]{animation:gate-in .22s ease-out}
+@keyframes gate-in{from{opacity:0;transform:translateY(12px) scale(.98)}}
+@media (prefers-reduced-motion:reduce){.gate[open]{animation:none}}
+.gate__head{position:relative;padding:30px 32px 26px;color:#fff;background:linear-gradient(120deg,var(--st-primary-press),var(--st-primary) 60%,var(--st-primary-hover))}
+.gate__head h2{color:#fff;font-weight:600;font-size:26px;line-height:1.3;margin-top:12px}
+.gate__head p{margin-top:8px;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.88);max-width:44ch}
+.gate__badge{display:inline-flex;align-items:center;gap:6px;background:var(--st-amber);color:var(--st-black);border-radius:var(--radius-pill);padding:5px 12px;font:700 11.5px/1 "Poppins",sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.gate__badge svg{width:15px;height:15px}
+.gate__close{position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;display:grid;place-items:center;cursor:pointer}
+.gate__close:hover{background:rgba(255,255,255,.26)}
+.gate__close svg{width:20px;height:20px}
+.gate__body{padding:24px 32px 28px}
+.gate .field{margin-bottom:14px}
+.gate .consent{flex-direction:row;margin:4px 0 18px}
+.gate .consent.has-error{color:#B3261E}
+.gate form .btn{width:100%}
+.gate__done{text-align:center;padding:8px 0 4px}
+.gate__check{width:64px;height:64px;margin:0 auto 14px;border-radius:50%;background:#E8F5EC;color:#14532D;display:grid;place-items:center}
+.gate__check svg{width:30px;height:30px}
+.gate__done h3{font-weight:600;font-size:22px;color:var(--st-black);outline:none}
+.gate__done p{margin:8px auto 20px;font-size:15px;color:var(--st-muted);max-width:36ch}
+.gate__done .btn{width:100%}
+.gate__back{margin-top:12px;background:none;border:0;color:var(--st-primary);font:500 14px/1.4 "Poppins",sans-serif;text-decoration:underline;cursor:pointer;padding:8px}
+@media (max-width:767px){.gate__head{padding:24px 20px 20px}.gate__head h2{font-size:22px;padding-right:36px}.gate__body{padding:20px}.gate .field-row{grid-template-columns:1fr}}
+
 /* Form */
 .form-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
 .form-intro h2{color:var(--st-primary);font-weight:600;font-size:40px;line-height:1.3}
@@ -300,7 +328,7 @@ a{color:var(--st-primary)}
 label,.label{font:500 14px/1.4 "Poppins",sans-serif;color:var(--st-black)}
 .req{color:#B3261E;margin-left:2px}
 .opt{color:var(--st-muted);font-weight:400}
-input[type=text],input[type=email],select,textarea{width:100%;font:400 15px/1.5 "Poppins",sans-serif;color:var(--st-black);background:#fff;border:1px solid #BDBDBD;border-radius:8px;padding:12px 14px;min-height:48px;transition:border-color .15s,box-shadow .15s}
+input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;font:400 15px/1.5 "Poppins",sans-serif;color:var(--st-black);background:#fff;border:1px solid #BDBDBD;border-radius:8px;padding:12px 14px;min-height:48px;transition:border-color .15s,box-shadow .15s}
 textarea{min-height:104px;resize:vertical}
 select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234F2F6D' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:40px}
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--st-primary);box-shadow:0 0 0 3px rgba(79,47,109,.25)}
@@ -540,10 +568,10 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--st-prima
       </div>
 
       <div class="case__cta">
-        <a class="btn btn--outline js-case-pdf" href="assets/sawatech-case-study-clinical-trial-swahili.pdf" target="_blank" rel="noopener" download>
+        <a class="btn btn--outline js-case-pdf" aria-haspopup="dialog" aria-controls="case-gate" href="assets/sawatech-case-study-clinical-trial-swahili.pdf" target="_blank" rel="noopener" download>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
           Download Full Case Study</a>
-        <small>PDF · 4 pages · 1.5 MB</small>
+        <small>Free · PDF · 4 pages · 1.5 MB</small>
       </div>
     </article>
   </div>
@@ -706,6 +734,72 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--st-prima
 </section>
 </main>
 
+<!-- ===== CASE-STUDY DOWNLOAD POP-UP (WordPress: Elementor Pro Popup + Form) ===== -->
+<dialog class="gate" id="case-gate" aria-labelledby="gate-title" aria-describedby="gate-desc">
+  <div class="gate__head on-dark">
+    <button type="button" class="gate__close" aria-label="Close" data-gate-close>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <span class="gate__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>Free case study · PDF</span>
+    <h2 id="gate-title">Get the Full Case Study</h2>
+    <p id="gate-desc">How SawaTech localized 800,000 words of clinical trial content into Swahili in 1.5 months, with 100% on-time delivery.</p>
+  </div>
+  <div class="gate__body">
+    <div id="gate-status" role="status" aria-live="polite"></div>
+    <form id="sawatech_case_study" name="SawaTech Case Study Download" novalidate>
+      <div class="field-row">
+        <div class="field">
+          <label for="cs-field-first_name">First Name<span class="req" aria-hidden="true">*</span></label>
+          <input id="cs-field-first_name" name="form_fields[first_name]" type="text" autocomplete="given-name" required aria-describedby="cs-err-first_name">
+          <span class="err" id="cs-err-first_name">Please enter your first name.</span>
+        </div>
+        <div class="field">
+          <label for="cs-field-last_name">Last Name<span class="req" aria-hidden="true">*</span></label>
+          <input id="cs-field-last_name" name="form_fields[last_name]" type="text" autocomplete="family-name" required aria-describedby="cs-err-last_name">
+          <span class="err" id="cs-err-last_name">Please enter your last name.</span>
+        </div>
+      </div>
+      <div class="field">
+        <label for="cs-field-business_email">Business Email<span class="req" aria-hidden="true">*</span></label>
+        <input id="cs-field-business_email" name="form_fields[business_email]" type="email" autocomplete="email" required aria-describedby="cs-err-business_email">
+        <span class="err" id="cs-err-business_email">Please enter a valid email address.</span>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="cs-field-company">Company<span class="req" aria-hidden="true">*</span></label>
+          <input id="cs-field-company" name="form_fields[company]" type="text" autocomplete="organization" required aria-describedby="cs-err-company">
+          <span class="err" id="cs-err-company">Please enter your company.</span>
+        </div>
+        <div class="field">
+          <label for="cs-field-phone">Phone Number<span class="req" aria-hidden="true">*</span></label>
+          <input id="cs-field-phone" name="form_fields[phone]" type="tel" autocomplete="tel" inputmode="tel" placeholder="+27 21 300 1810" required aria-describedby="cs-err-phone">
+          <span class="err" id="cs-err-phone">Please enter a valid phone number, including country code.</span>
+        </div>
+      </div>
+      <input type="hidden" name="form_fields[utm_source]" id="cs-field-utm_source">
+      <input type="hidden" name="form_fields[utm_medium]" id="cs-field-utm_medium">
+      <input type="hidden" name="form_fields[utm_campaign]" id="cs-field-utm_campaign">
+      <input type="hidden" name="form_fields[lead_source]" id="cs-field-lead_source">
+      <input type="hidden" name="form_fields[lead_type]" value="case_study_download">
+      <div class="consent field">
+        <input id="cs-field-privacy_consent" name="form_fields[privacy_consent]" type="checkbox" required aria-describedby="cs-err-privacy_consent">
+        <label for="cs-field-privacy_consent" style="font-weight:400;font-size:13px">I agree that SawaTech may store and use my details to send this case study and follow up about relevant services, as described in the <a href="https://sawa-tech.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>.<span class="req" aria-hidden="true">*</span></label>
+      </div>
+      <span class="err" id="cs-err-privacy_consent" style="margin:-12px 0 14px">Please confirm consent to download.</span>
+      <button type="submit" class="btn btn--primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+        Download the Case Study</button>
+    </form>
+    <div class="gate__done" id="gate-done" hidden>
+      <span class="gate__check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+      <h3 tabindex="-1" id="gate-done-title">Thank you<span id="gate-name"></span>!</h3>
+      <p>Your case study is ready. If the download didn't start, use the button below.</p>
+      <a class="btn btn--primary" id="gate-download" href="#" target="_blank" rel="noopener" download>Download the PDF</a>
+      <button type="button" class="gate__back" data-gate-close>Back to the page</button>
+    </div>
+  </div>
+</dialog>
+
 <!-- ===== 6. MINIMAL FOOTER ===== -->
 <footer class="site-footer on-dark">
   <div class="container">
@@ -776,6 +870,59 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--st-prima
   form.querySelectorAll('[required]').forEach(function(f){
     f.addEventListener(f.type==='checkbox'?'change':'input',function(){if(f.getAttribute('aria-invalid')==='true')setErr(f,false);});
   });
+
+  /* ---- Case-study download pop-up (gated PDF) ----
+     PREVIEW: simulated submit. WordPress: Elementor Pro Popup with a Form
+     widget (ID sawatech_case_study) whose actions are Collect Submissions,
+     Email and Redirect to the PDF. See IMPLEMENTATION-NOTES.md §4b. */
+  var gate=document.getElementById('case-gate'), trigger=document.querySelector('.js-case-pdf');
+  var gForm=document.getElementById('sawatech_case_study'), gStatus=document.getElementById('gate-status');
+  var gDone=document.getElementById('gate-done'), gLink=document.getElementById('gate-download');
+  var UNLOCK='st_cs_unlocked';
+  function unlocked(){try{return localStorage.getItem(UNLOCK)==='1';}catch(e){return false;}}
+  if(gate&&trigger&&typeof gate.showModal==='function'){
+    gLink.href=trigger.href;
+    ['utm_source','utm_medium','utm_campaign'].forEach(function(k){document.getElementById('cs-field-'+k).value=attr[k]||'';});
+    document.getElementById('cs-field-lead_source').value=src;
+    trigger.addEventListener('click',function(e){
+      if(unlocked())return;               // already filled the form: download directly
+      e.preventDefault();
+      gate.showModal(); document.documentElement.style.overflow='hidden';
+      var first=gForm.hidden?document.getElementById('gate-done-title'):document.getElementById('cs-field-first_name');
+      setTimeout(function(){first.focus();},30);
+    });
+    gate.addEventListener('close',function(){document.documentElement.style.overflow='';trigger.focus();});
+    gate.addEventListener('click',function(e){if(e.target===gate)gate.close();});   // backdrop click
+    gate.querySelectorAll('[data-gate-close]').forEach(function(b){b.addEventListener('click',function(){gate.close();});});
+    function gErr(input,on){
+      var wrap=input.closest('.field');
+      input.setAttribute('aria-invalid',on?'true':'false'); wrap.classList.toggle('has-error',on);
+      if(input.type==='checkbox')document.getElementById('cs-err-privacy_consent').style.display=on?'block':'none';
+    }
+    gForm.addEventListener('submit',function(e){
+      e.preventDefault();
+      var first=null;
+      gForm.querySelectorAll('[required]').forEach(function(f){
+        var v=f.value.trim(), bad=f.type==='checkbox'?!f.checked:!v;
+        if(!bad&&f.type==='email')bad=!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+        if(!bad&&f.type==='tel')bad=!/^\+?[0-9\s().-]{7,20}$/.test(v)||v.replace(/\D/g,'').length<7;
+        gErr(f,bad); if(bad&&!first)first=f;
+      });
+      if(first){first.focus();gStatus.innerHTML='<div class="form-status form-status--err">Please complete the highlighted fields.</div>';return;}
+      gStatus.innerHTML='';
+      document.getElementById('gate-name').textContent=', '+document.getElementById('cs-field-first_name').value.trim().split(/\s+/)[0];
+      gForm.hidden=true; gDone.hidden=false;
+      document.getElementById('gate-done-title').focus();
+      try{localStorage.setItem(UNLOCK,'1');}catch(err){}
+      window.dataLayer=window.dataLayer||[];
+      window.dataLayer.push({event:'generate_lead',form_id:'sawatech_case_study',lead_type:'case_study_download',lead_source:src,
+        utm_source:attr.utm_source||'',utm_medium:attr.utm_medium||'',utm_campaign:attr.utm_campaign||''});
+      gLink.click();                       // start the download; the button stays as a fallback
+    });
+    gForm.querySelectorAll('[required]').forEach(function(f){
+      f.addEventListener(f.type==='checkbox'?'change':'input',function(){if(f.getAttribute('aria-invalid')==='true')gErr(f,false);});
+    });
+  }
 })();
 </script>
 </body>

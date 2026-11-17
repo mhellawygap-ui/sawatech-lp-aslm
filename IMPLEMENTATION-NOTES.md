@@ -120,6 +120,39 @@ Other Localization Requirements
 
 ---
 
+## 4b. Case-study download pop-up (gated PDF)
+
+The case-study section's **Download Full Case Study** button opens a pop-up form. The PDF is delivered only after a successful submission. This isn't in the JSON template yet, so build it in Elementor Pro:
+
+1. **Media Library:** upload `case-study/sawatech-case-study-clinical-trial-swahili.pdf` (from this repo). Copy its URL. The cover page names the client (Merck); SawaTech confirmed on 17 Nov 2026 that this is cleared for public use.
+2. **Templates → Popups → Add New:** name it "ASLM 2026 – Case Study Download".
+   - Layout: width 560 px, height fit to content, position centre, close button on, overlay `rgba(30,17,42,.62)`, border radius 15 px. Entrance animation: Fade In.
+   - Content: a purple header (gradient `#3F2557 → #4F2F6D → #5E3A80`), an amber badge "Free case study · PDF", an H2 "Get the Full Case Study" and the one-line summary. Then the Form widget below.
+   - **Conditions:** none (opened by the button only). **Triggers:** none. **Advanced:** check *Avoid multiple popups*.
+3. **Form widget** inside the pop-up: Form Name `SawaTech Case Study Download`, Form ID `sawatech_case_study`.
+
+| Field ID | Type | Label | Required | Width (desktop/mobile) |
+|---|---|---|---|---|
+| `first_name` | Text | First Name | ✔ | 50 / 100 |
+| `last_name` | Text | Last Name | ✔ | 50 / 100 |
+| `business_email` | Email | Business Email | ✔ | 100 |
+| `company` | Text | Company | ✔ | 50 / 100 |
+| `phone` | Tel | Phone Number (placeholder `+27 21 300 1810`) | ✔ | 50 / 100 |
+| `utm_source` `utm_medium` `utm_campaign` `lead_source` | Hidden | n/a | n/a | n/a |
+| `lead_type` | Hidden | default value `case_study_download` | n/a | n/a |
+| `privacy_consent` | Acceptance | "I agree that SawaTech may store and use my details to send this case study and follow up about relevant services, as described in the Privacy Policy." | ✔ | 100 |
+| `hp_check` | Honeypot | n/a | n/a | n/a |
+
+   - Submit button: "Download the Case Study", full width, primary purple.
+   - **Actions After Submit:** *Collect Submissions* + *Email* (To: sales inbox · Subject `Case study download: [field id="company"]` · Reply-To `[field id="business_email"]`) + **Redirect** to the PDF URL from step 1. Optionally add *Email 2* to the visitor with the PDF link, so they keep a copy.
+   - Success message: "Thank you! Your case study download is starting."
+4. **Button link:** on the case-study section's "Download Full Case Study" button, set Link → Dynamic → *Actions → Popup → Open Popup → "ASLM 2026 – Case Study Download"*.
+5. **Tracking:** the updated `elementor/custom-code-attribution-ga4.html` fills the hidden fields when the pop-up opens and sends `generate_lead` with `form_id: sawatech_case_study` and `lead_type: case_study_download`. In GA4, register `lead_type` as a custom dimension, so case-study leads are reported separately from consultation requests.
+
+**Note:** gating stops casual downloads, not determined ones. The PDF URL is public once someone has it. That's acceptable for marketing content. For true restriction, send the PDF only by email (Email 2 action) and leave out the Redirect.
+
+---
+
 ## 5. Campaign tracking
 
 **URLs** (one page, different parameters):

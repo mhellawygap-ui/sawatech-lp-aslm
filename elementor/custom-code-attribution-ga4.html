@@ -9,7 +9,8 @@
 -->
 <script>
 (function () {
-  var FORM_ID = 'sawatech_aslm2026';
+  // Consultation form on the page + case-study download form inside the pop-up.
+  var FORMS = { sawatech_aslm2026: 'consultation', sawatech_case_study: 'case_study_download' };
   var KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
   var STORE = 'st_aslm2026_attr';
 
@@ -31,26 +32,32 @@
 
   // 2) Fill the Elementor hidden fields (field IDs set in the Form widget).
   function fill() {
-    var form = document.getElementById(FORM_ID);
-    if (!form) return;
-    function set(id, val) {
-      var el = form.querySelector('[name="form_fields[' + id + ']"]');
-      if (el) el.value = val || '';
-    }
-    KEYS.forEach(function (k) { set(k, attr[k]); });
-    set('lead_source', leadSource);
-    set('landing_page', window.location.origin + window.location.pathname);
+    Object.keys(FORMS).forEach(function (id) {
+      var form = document.getElementById(id);
+      if (!form) return;
+      function set(name, val) {
+        var el = form.querySelector('[name="form_fields[' + name + ']"]');
+        if (el) el.value = val || '';
+      }
+      KEYS.forEach(function (k) { set(k, attr[k]); });
+      set('lead_source', leadSource);
+      set('landing_page', window.location.origin + window.location.pathname);
+    });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fill); else fill();
+  // Pop-up forms are injected when the pop-up opens, so fill again then.
+  if (window.jQuery) window.jQuery(document).on('elementor/popup/show', fill);
+  else window.addEventListener('load', function () { if (window.jQuery) window.jQuery(document).on('elementor/popup/show', fill); });
 
   // 3) GA4 / GTM: fire generate_lead ONLY after Elementor confirms a successful submission.
   //    Elementor Pro triggers the jQuery event "submit_success" on the <form>.
   function onSuccess(e) {
     var form = e && e.target;
-    if (!form || form.id !== FORM_ID) return;
+    if (!form || !FORMS.hasOwnProperty(form.id)) return;
     var payload = {
       event: 'generate_lead',
-      form_id: FORM_ID,
+      form_id: form.id,
+      lead_type: FORMS[form.id],
       lead_source: leadSource,
       utm_source: attr.utm_source || '',
       utm_medium: attr.utm_medium || '',
@@ -61,7 +68,7 @@
     window.dataLayer.push(payload);
     // Fallback only when GTM is absent but gtag.js is present.
     if (!window.google_tag_manager && typeof window.gtag === 'function') {
-      window.gtag('event', 'generate_lead', { form_id: FORM_ID, lead_source: leadSource });
+      window.gtag('event', 'generate_lead', { form_id: form.id, lead_type: FORMS[form.id], lead_source: leadSource });
     }
   }
   function bind() {
