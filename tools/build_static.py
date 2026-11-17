@@ -24,7 +24,15 @@ MAX_W = {
     "Process-Section-Visuals-03-1.webp": 900,
 }
 
+# files that live in this repo rather than on sawa-tech.com (yet)
+LOCAL = {
+    "sawatech-case-study-clinical-trial-swahili.pdf":
+        ROOT / "case-study" / "sawatech-case-study-clinical-trial-swahili.pdf",
+}
+
 def fetch(url, name):
+    if name in LOCAL:
+        return LOCAL[name].read_bytes()
     CACHE.mkdir(parents=True, exist_ok=True)
     p = CACHE / name
     if not p.exists():
