@@ -1,0 +1,72 @@
+<!--
+  SawaTech × ASLM 2026 — Attribution + GA4 lead event
+  Where: Elementor > Custom Code > Add New
+         Location: </body> - End   |   Priority: 10
+         Conditions: Include > Singular > Page > "ASLM 2026" (this page only)
+  Why custom code: WP Rocket serves the cached page for utm_* URLs, so the
+  Elementor "Request Parameter" dynamic tag would render stale/empty values.
+  This reads the URL in the browser instead. No credentials, no PII.
+-->
+<script>
+(function () {
+  var FORM_ID = 'sawatech_aslm2026';
+  var KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+  var STORE = 'st_aslm2026_attr';
+
+  // 1) Capture UTMs: URL first, else what this tab stored earlier (survives in-page navigation).
+  var qs = new URLSearchParams(window.location.search);
+  var hasNew = KEYS.some(function (k) { return qs.get(k); });
+  var attr = {};
+  try {
+    if (hasNew) {
+      KEYS.forEach(function (k) { attr[k] = (qs.get(k) || '').slice(0, 100); });
+      sessionStorage.setItem(STORE, JSON.stringify(attr));
+    } else {
+      attr = JSON.parse(sessionStorage.getItem(STORE) || '{}');
+    }
+  } catch (e) {
+    if (hasNew) KEYS.forEach(function (k) { attr[k] = (qs.get(k) || '').slice(0, 100); });
+  }
+  var leadSource = attr.utm_medium === 'qr' ? 'booth_qr' : (attr.utm_source || 'direct');
+
+  // 2) Fill the Elementor hidden fields (field IDs set in the Form widget).
+  function fill() {
+    var form = document.getElementById(FORM_ID);
+    if (!form) return;
+    function set(id, val) {
+      var el = form.querySelector('[name="form_fields[' + id + ']"]');
+      if (el) el.value = val || '';
+    }
+    KEYS.forEach(function (k) { set(k, attr[k]); });
+    set('lead_source', leadSource);
+    set('landing_page', window.location.origin + window.location.pathname);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fill); else fill();
+
+  // 3) GA4 / GTM: fire generate_lead ONLY after Elementor confirms a successful submission.
+  //    Elementor Pro triggers the jQuery event "submit_success" on the <form>.
+  function onSuccess(e) {
+    var form = e && e.target;
+    if (!form || form.id !== FORM_ID) return;
+    var payload = {
+      event: 'generate_lead',
+      form_id: FORM_ID,
+      lead_source: leadSource,
+      utm_source: attr.utm_source || '',
+      utm_medium: attr.utm_medium || '',
+      utm_campaign: attr.utm_campaign || ''
+      // No name, email, company or free text: never send personal data to analytics.
+    };
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(payload);
+    // Fallback only when GTM is absent but gtag.js is present.
+    if (!window.google_tag_manager && typeof window.gtag === 'function') {
+      window.gtag('event', 'generate_lead', { form_id: FORM_ID, lead_source: leadSource });
+    }
+  }
+  function bind() {
+    if (window.jQuery) window.jQuery(document).on('submit_success', onSuccess);
+  }
+  if (window.jQuery) bind(); else window.addEventListener('load', bind);
+})();
+</script>
