@@ -83,6 +83,9 @@ def main():
     # artifact viewer blocks downloads: open the PDF from GitHub Pages instead
     pdf = 'href="assets/sawatech-case-study-clinical-trial-swahili.pdf" target="_blank" rel="noopener" download'
     assert pdf in page
+    gate = 'id="gate-download" href="#" target="_blank" rel="noopener" download>'
+    assert gate in page
+    page = page.replace(gate, gate.replace(' download>', '>'))
     (ROOT / "_artifact" / "index.html").write_text(page.replace(pdf,
         'href="https://mhellawygap-ui.github.io/sawatech-lp-aslm/assets/sawatech-case-study-clinical-trial-swahili.pdf" target="_blank" rel="noopener"'),
         encoding="utf-8")
