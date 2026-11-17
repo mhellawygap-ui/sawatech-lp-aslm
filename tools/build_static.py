@@ -68,7 +68,9 @@ def main():
     (ROOT / "docs" / ".nojekyll").touch()
     art = html.replace(
         "<title>SawaTech at ASLM 2026 | Life Sciences Localization</title>",
-        "<title>SawaTech ASLM 2026</title>")
+        "<title>SawaTech ASLM 2026</title>").replace(
+        '<a href="mailto:support@sawa-tech.net">support@sawa-tech.net</a>',
+        '<span>support@sawa-tech.net</span>')  # artifact viewer: no mailto links
     build(ROOT / "_artifact", art)
     for d in ("docs", "_artifact"):
         total = sum(f.stat().st_size for f in (ROOT / d / "assets").glob("*"))
