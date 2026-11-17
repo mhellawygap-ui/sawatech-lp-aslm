@@ -79,7 +79,13 @@ def main():
         "<title>SawaTech ASLM 2026</title>").replace(
         '<a href="mailto:support@sawa-tech.net">support@sawa-tech.net</a>',
         '<span>support@sawa-tech.net</span>')  # artifact viewer: no mailto links
-    build(ROOT / "_artifact", art)
+    page = build(ROOT / "_artifact", art)
+    # artifact viewer blocks downloads: open the PDF from GitHub Pages instead
+    pdf = 'href="assets/sawatech-case-study-clinical-trial-swahili.pdf" target="_blank" rel="noopener" download'
+    assert pdf in page
+    (ROOT / "_artifact" / "index.html").write_text(page.replace(pdf,
+        'href="https://mhellawygap-ui.github.io/sawatech-lp-aslm/assets/sawatech-case-study-clinical-trial-swahili.pdf" target="_blank" rel="noopener"'),
+        encoding="utf-8")
     for d in ("docs", "_artifact"):
         total = sum(f.stat().st_size for f in (ROOT / d / "assets").glob("*"))
         print(f"{d}: {len(list((ROOT / d / 'assets').glob('*')))} assets, {total/1024:.0f} KB")
