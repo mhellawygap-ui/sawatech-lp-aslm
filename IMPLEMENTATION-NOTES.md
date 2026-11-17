@@ -9,7 +9,28 @@ Package contents
 | `elementor/custom-code-attribution-ga4.html` | Small Custom Code snippet: UTM → hidden fields, `generate_lead` on success. |
 | `IMPLEMENTATION-NOTES.md` | This document. |
 
-> **Import status, stated honestly.** The JSON follows Elementor's container/widget schema and was checked for validity and unique IDs, but it has **not** been imported into a live Elementor 4.4 / Pro 4.4 install. Import it on staging first. If any widget renders with missing styles, use the build spec in §7. It mirrors the JSON one-to-one.
+> **Import status (17 Nov 2026).** v2 was imported with Elementor's own importer (`wp elementor library import`) into a clean WordPress 6 + **free Elementor 4.4.1** install and rendered at 1366 px, 900 px and iPhone 13 widths: no errors, no placeholder images, no horizontal scroll. Not testable without a Pro licence: the Pro **Form** widget (it renders empty in free Elementor) and the **popup** template (free Elementor has no popup type). Import on staging first and check those two. Follow §0.
+
+---
+
+## 0. Importing the v2 templates (start here)
+
+Order matters. The popup has to exist before the page's download button can point at it.
+
+1. **Media Library:** upload `case-study/sawatech-case-study-clinical-trial-swahili.pdf`. If WordPress files it anywhere other than `/wp-content/uploads/2026/11/`, update `PDF_URL` in `tools/build_elementor.py`, re-run it, or edit the popup form's *Redirect* URL after import.
+2. **Templates → Saved Templates → Import:** `elementor/sawatech-aslm2026-case-study-popup.json`. Then open it in Elementor and set:
+   - **Email** action → *To* = the sales inbox. It's left blank on purpose.
+   - **Publish → Conditions:** *Include → Singular → Page → ASLM 2026*. **Triggers:** none, because the button opens it.
+3. **Templates → Saved Templates → Import:** `elementor/sawatech-aslm2026-elementor.json`. On the ASLM 2026 page: *Edit with Elementor → folder icon → My Templates → Insert*. Page Settings → Page Layout = **Elementor Canvas**.
+   - The importer downloads every image (sawa-tech.com images plus the HIPAA/GDPR badges hosted on GitHub Pages) into the Media Library and links them by ID. Duplicates of existing media are expected, and you can delete the originals' copies later.
+   - The hero's wave background is set in CSS and points at the existing `/2022/02/layered-waves-bg-03.svg`. WordPress blocks SVG uploads, so importing it would have produced a placeholder.
+4. **Case-study button → popup:** select the *Download Full Case Study* button → Link → **Dynamic** (stack icon) → *Actions → Popup* → Action *Open Popup* → choose **ASLM 2026 – Case Study Download**. In the template it's a placeholder link (`#st-case-study-download`), because the popup's ID only exists after import.
+5. **Consultation form:** set *Email → To* (sales inbox), as before (§4).
+6. **Custom Code:** replace the old snippet with the updated `elementor/custom-code-attribution-ga4.html`. It now covers both forms.
+7. **Page styles** live in an HTML widget named *"Page styles (keep at top)"* inside the header container. Don't delete it: the ribbon, flow connectors, process numbers, quote marks and logo sizing depend on it. Page-level Custom CSS is now empty.
+8. **QA** with §8, plus: open the popup, submit it, confirm the PDF opens and the email arrives, then check Elementor → Submissions for both forms.
+
+**Editing later:** change `tools/build_elementor.py` and re-run it rather than hand-editing the JSON, so both templates stay in sync with the preview.
 
 ---
 
