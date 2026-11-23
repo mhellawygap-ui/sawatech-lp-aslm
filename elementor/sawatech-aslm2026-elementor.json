@@ -53,7 +53,7 @@
      "widgetType": "html",
      "isInner": false,
      "settings": {
-      "html": "<style>/* SawaTech × ASLM 2026 — page styles that Elementor controls can't express. */\n.st-measure{max-width:780px;margin-inline:auto}\n.elementor-field-group .elementor-field:focus{border-color:#4F2F6D;box-shadow:0 0 0 3px rgba(79,47,109,.25)}\na:focus-visible,.elementor-button:focus-visible{outline:3px solid #191919;outline-offset:3px}\n.st-hero a:focus-visible,.st-footer a:focus-visible,.st-result a:focus-visible{outline-color:#fff}\nhtml{scroll-behavior:smooth}\n@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}\n.st-hero h1{max-width:22ch}\n.st-cobrand{width:fit-content!important;max-width:100%;margin-bottom:4px}\n.st-cobrand-label{white-space:nowrap;padding-right:14px;border-right:1px solid #E3E3E3}\n.st-cobrand-label p{margin:0}\n.st-countdown .elementor-countdown-wrapper{max-width:366px}\n.st-countdown .elementor-countdown-item{-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}\n.st-countdown .elementor-countdown-digits{font-variant-numeric:tabular-nums}\n.st-countdown .elementor-countdown-expire--message{display:inline-flex;align-items:center;gap:10px;background:#FCB900;border-radius:100px;padding:10px 18px}\n.st-booth{position:relative}\n.st-booth-tag{position:absolute!important;left:-18px;bottom:28px;width:auto!important;z-index:2}\n.st-booth-tag p{display:flex;flex-direction:column;margin:0;background:#FCB900;color:#191919;border-radius:14px;padding:10px 18px;box-shadow:0 10px 24px rgba(0,0,0,.25);font:500 12px/1.3 \"Poppins\",sans-serif;letter-spacing:.06em;text-transform:uppercase}\n.st-booth-tag strong{font-size:20px;line-height:1.2;letter-spacing:0;text-transform:none;font-weight:700}\n@media (max-width:767px){.st-booth-tag{left:calc(50% - 158px);bottom:14px}.st-booth-tag p{padding:8px 14px}.st-booth-tag strong{font-size:17px}}\n.st-hero{background-image:url(\"https://sawa-tech.com/wp-content/uploads/2022/02/layered-waves-bg-03.svg\");background-position:center;background-size:cover;background-repeat:no-repeat}\n\n/* trust band */\n.st-trust .st-badge img{max-height:62px;width:auto;object-fit:contain;margin-inline:auto}\n@media (max-width:767px){.st-trust .st-badge img{max-height:46px}\n  .st-badges>:last-child:nth-child(odd){grid-column:1 / -1;justify-self:center;width:calc(50% - 7px)}}\n.st-logos .swiper-slide-image{height:100px;width:150px;object-fit:contain;mix-blend-mode:multiply;margin-inline:auto}\n@media (max-width:767px){.st-logos .swiper-slide-image{height:78px;width:116px}}\n\n/* case study: corner ribbon */\n.st-case{position:relative;overflow:visible}\n.st-ribbon-wrap{position:absolute!important;top:-10px;left:-10px;width:200px!important;height:200px;z-index:3;pointer-events:none}\n.st-ribbon{position:absolute;inset:0;overflow:hidden}\n.st-ribbon::before,.st-ribbon::after{content:\"\";position:absolute;z-index:-1;display:block;border:5px solid #3F2557;border-top-color:transparent;border-left-color:transparent}\n.st-ribbon::before{top:0;right:0}\n.st-ribbon::after{bottom:0;left:0}\n.st-ribbon span{position:absolute;right:-34px;top:52px;width:300px;padding:11px 0;transform:rotate(-45deg);background:linear-gradient(90deg,#3F2557,#4F2F6D 30%,#5E3A80 70%,#3F2557);box-shadow:0 6px 12px rgba(0,0,0,.18);color:#fff;font:600 12.5px/1 \"Poppins\",sans-serif;letter-spacing:.1em;text-transform:uppercase;text-align:center}\n@media (max-width:767px){.st-ribbon-wrap{width:150px!important;height:150px}.st-ribbon span{width:230px;right:-28px;top:37px;font-size:10px;letter-spacing:.07em;padding:8px 0}}\n\n/* case study: fact chips */\n.st-chips ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}\n.st-chips li{background:#EDE4F5;color:#191919;border-radius:100px;padding:7px 16px;font-size:13.5px;line-height:1.3}\n.st-chips b{color:#4F2F6D;font-weight:600;margin-right:6px}\n@media (max-width:767px){.st-chips li{font-size:12.5px;padding:6px 12px;border-radius:14px}}\n\n/* case study: request-to-result flow */\n.st-flow{counter-reset:stflow}\n.st-flow-step .elementor-widget-icon{position:relative}\n.st-flow-step .elementor-icon{position:relative}\n.st-flow-step .elementor-icon::after{counter-increment:stflow;content:counter(stflow);position:absolute;top:-4px;right:-4px;width:24px;height:24px;border-radius:50%;background:#4F2F6D;color:#fff;font:600 12px/24px \"Poppins\",sans-serif;text-align:center;box-shadow:0 0 0 3px #fff}\n@media (min-width:1025px){\n  .st-flow-step:not(:last-child) .elementor-widget-icon::after{content:\"\";position:absolute;top:34px;left:calc(50% + 44px);right:calc(-50% + 22px);height:2px;background:linear-gradient(90deg,#4F2F6D 0 55%,transparent 0) 0 0/10px 2px repeat-x}\n  .st-flow-step:not(:last-child) .elementor-widget-icon::before{content:\"\";position:absolute;top:29px;right:calc(-50% + 18px);border:6px solid transparent;border-left:8px solid #4F2F6D}\n}\n@media (max-width:1024px){\n  .st-flow-step>.e-con{flex:1 1 0!important;min-width:0;width:auto!important;--width:auto}\n  .st-flow-step:not(:last-child) .elementor-widget-icon{align-self:stretch}\n  .st-flow-step:not(:last-child) .elementor-widget-icon::after{content:\"\";position:absolute;top:76px;bottom:-22px;left:33px;width:2px;background:linear-gradient(#4F2F6D 0 55%,transparent 0) 0 0/2px 10px repeat-y}\n  @media (max-width:767px){.st-flow-step:not(:last-child) .elementor-widget-icon::after{top:60px;left:25px}}\n}\n\n/* case study: result panel */\n.st-result{position:relative;overflow:hidden}\n.st-result::after{content:\"\";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;border:30px solid rgba(255,255,255,.06);pointer-events:none}\n.st-result-tag .elementor-heading-title{display:inline-flex;align-items:center;gap:8px;background:#FCB900;border-radius:100px;padding:6px 14px}\n.st-result-tag .elementor-heading-title::before{content:\"✓\";font-weight:700}\n@media (min-width:1025px){.st-metric+.st-metric{border-left:1px solid rgba(255,255,255,.2);padding-left:20px!important}}\n.st-result-checks{border-top:1px solid rgba(255,255,255,.2);padding-top:20px}\n\n/* process timeline */\n.st-process{counter-reset:stproc}\n.st-proc-step{position:relative;padding-left:76px!important}\n.st-proc-step::before{counter-increment:stproc;content:counter(stproc,decimal-leading-zero);position:absolute;left:0;top:0;width:56px;height:56px;border-radius:50%;background:#4F2F6D;color:#fff;display:grid;place-items:center;font:600 17px/1 \"Poppins\",sans-serif;box-shadow:0 0 0 6px #EDE4F5}\n.st-proc-step:last-child::before{background:#FCB900;color:#191919;box-shadow:0 0 0 6px #FFF3CC}\n.st-proc-step:not(:last-child)::after{content:\"\";position:absolute;left:27px;top:62px;bottom:-22px;width:2px;background:linear-gradient(#4F2F6D 0 50%,transparent 0) 0 0/2px 10px repeat-y}\n@media (max-width:767px){.st-proc-step{padding-left:60px!important}.st-proc-step::before{width:44px;height:44px;font-size:15px;box-shadow:0 0 0 4px #EDE4F5}.st-proc-step:not(:last-child)::after{left:21px;top:50px}}\n\n/* testimonials */\n.st-quote .elementor-testimonial-content::before{content:\"\\201C\";display:block;font:700 64px/0.9 Georgia,serif;color:#4F2F6D;margin-bottom:8px}\n.st-quote--accent .elementor-testimonial-content::before{color:#FCB900}\n.st-quote .elementor-widget-testimonial{flex-grow:1;display:flex;flex-direction:column}\n.st-quote .elementor-widget-testimonial>*{flex-grow:1}\n.st-quote .elementor-testimonial-wrapper{display:flex;flex-direction:column;height:100%}\n.st-quote .elementor-testimonial-content{flex:1}\n.st-quote .elementor-testimonial-meta{border-top:1px solid #E3E3E3;padding-top:20px;margin-top:24px}\n.st-quote--accent .elementor-testimonial-meta{border-top-color:rgba(255,255,255,.2)}\n.st-quote .elementor-testimonial-image img{background:#EDE4F5}\n\n/* media splits: hide decorative images on phones */\n@media (max-width:767px){.st-split-media{display:none!important}}</style>",
+      "html": "<style>/* SawaTech × ASLM 2026 — page styles that Elementor controls can't express. */\n.st-measure{max-width:780px;margin-inline:auto}\n.elementor-field-group .elementor-field:focus{border-color:#4F2F6D;box-shadow:0 0 0 3px rgba(79,47,109,.25)}\na:focus-visible,.elementor-button:focus-visible{outline:3px solid #191919;outline-offset:3px}\n.st-hero a:focus-visible,.st-footer a:focus-visible,.st-result a:focus-visible{outline-color:#fff}\nhtml{scroll-behavior:smooth}\n@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}\n.st-hero h1{max-width:22ch}\n.st-cobrand{width:fit-content!important;max-width:100%;margin-bottom:4px}\n.st-cobrand-label{white-space:nowrap;padding-right:14px;border-right:1px solid #E3E3E3}\n.st-cobrand-label p{margin:0}\n.st-booth{position:relative}\n.st-booth-tag{position:absolute!important;left:-18px;bottom:28px;width:auto!important;z-index:2}\n.st-booth-tag p{display:flex;flex-direction:column;margin:0;background:#FCB900;color:#191919;border-radius:14px;padding:10px 18px;box-shadow:0 10px 24px rgba(0,0,0,.25);font:500 12px/1.3 \"Poppins\",sans-serif;letter-spacing:.06em;text-transform:uppercase}\n.st-booth-tag strong{font-size:20px;line-height:1.2;letter-spacing:0;text-transform:none;font-weight:700}\n@media (max-width:767px){.st-booth-tag{left:calc(50% - 158px);bottom:14px}.st-booth-tag p{padding:8px 14px}.st-booth-tag strong{font-size:17px}}\n.st-hero{background-image:url(\"https://sawa-tech.com/wp-content/uploads/2022/02/layered-waves-bg-03.svg\");background-position:center;background-size:cover;background-repeat:no-repeat}\n\n/* trust band */\n.st-trust .st-badge img{max-height:62px;width:auto;object-fit:contain;margin-inline:auto}\n@media (max-width:767px){.st-trust .st-badge img{max-height:46px}\n  .st-badges>:last-child:nth-child(odd){grid-column:1 / -1;justify-self:center;width:calc(50% - 7px)}}\n.st-logos .swiper-slide-image{height:100px;width:150px;object-fit:contain;mix-blend-mode:multiply;margin-inline:auto}\n@media (max-width:767px){.st-logos .swiper-slide-image{height:78px;width:116px}}\n\n/* case study: corner ribbon */\n.st-case{position:relative;overflow:visible}\n.st-ribbon-wrap{position:absolute!important;top:-10px;left:-10px;width:200px!important;height:200px;z-index:3;pointer-events:none}\n.st-ribbon{position:absolute;inset:0;overflow:hidden}\n.st-ribbon::before,.st-ribbon::after{content:\"\";position:absolute;z-index:-1;display:block;border:5px solid #3F2557;border-top-color:transparent;border-left-color:transparent}\n.st-ribbon::before{top:0;right:0}\n.st-ribbon::after{bottom:0;left:0}\n.st-ribbon span{position:absolute;right:-34px;top:52px;width:300px;padding:11px 0;transform:rotate(-45deg);background:linear-gradient(90deg,#3F2557,#4F2F6D 30%,#5E3A80 70%,#3F2557);box-shadow:0 6px 12px rgba(0,0,0,.18);color:#fff;font:600 12.5px/1 \"Poppins\",sans-serif;letter-spacing:.1em;text-transform:uppercase;text-align:center}\n@media (max-width:767px){.st-ribbon-wrap{width:150px!important;height:150px}.st-ribbon span{width:230px;right:-28px;top:37px;font-size:10px;letter-spacing:.07em;padding:8px 0}}\n\n/* case study: fact chips */\n.st-chips ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}\n.st-chips li{background:#EDE4F5;color:#191919;border-radius:100px;padding:7px 16px;font-size:13.5px;line-height:1.3}\n.st-chips b{color:#4F2F6D;font-weight:600;margin-right:6px}\n@media (max-width:767px){.st-chips li{font-size:12.5px;padding:6px 12px;border-radius:14px}}\n\n/* case study: request-to-result flow */\n.st-flow{counter-reset:stflow}\n.st-flow-step .elementor-widget-icon{position:relative}\n.st-flow-step .elementor-icon{position:relative}\n.st-flow-step .elementor-icon::after{counter-increment:stflow;content:counter(stflow);position:absolute;top:-4px;right:-4px;width:24px;height:24px;border-radius:50%;background:#4F2F6D;color:#fff;font:600 12px/24px \"Poppins\",sans-serif;text-align:center;box-shadow:0 0 0 3px #fff}\n@media (min-width:1025px){\n  .st-flow-step:not(:last-child) .elementor-widget-icon::after{content:\"\";position:absolute;top:34px;left:calc(50% + 44px);right:calc(-50% + 22px);height:2px;background:linear-gradient(90deg,#4F2F6D 0 55%,transparent 0) 0 0/10px 2px repeat-x}\n  .st-flow-step:not(:last-child) .elementor-widget-icon::before{content:\"\";position:absolute;top:29px;right:calc(-50% + 18px);border:6px solid transparent;border-left:8px solid #4F2F6D}\n}\n@media (max-width:1024px){\n  .st-flow-step>.e-con{flex:1 1 0!important;min-width:0;width:auto!important;--width:auto}\n  .st-flow-step:not(:last-child) .elementor-widget-icon{align-self:stretch}\n  .st-flow-step:not(:last-child) .elementor-widget-icon::after{content:\"\";position:absolute;top:76px;bottom:-22px;left:33px;width:2px;background:linear-gradient(#4F2F6D 0 55%,transparent 0) 0 0/2px 10px repeat-y}\n  @media (max-width:767px){.st-flow-step:not(:last-child) .elementor-widget-icon::after{top:60px;left:25px}}\n}\n\n/* case study: result panel */\n.st-result{position:relative;overflow:hidden}\n.st-result::after{content:\"\";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;border:30px solid rgba(255,255,255,.06);pointer-events:none}\n.st-result-tag .elementor-heading-title{display:inline-flex;align-items:center;gap:8px;background:#FCB900;border-radius:100px;padding:6px 14px}\n.st-result-tag .elementor-heading-title::before{content:\"✓\";font-weight:700}\n@media (min-width:1025px){.st-metric+.st-metric{border-left:1px solid rgba(255,255,255,.2);padding-left:20px!important}}\n.st-result-checks{border-top:1px solid rgba(255,255,255,.2);padding-top:20px}\n\n/* process timeline */\n.st-process{counter-reset:stproc}\n.st-proc-step{position:relative;padding-left:76px!important}\n.st-proc-step::before{counter-increment:stproc;content:counter(stproc,decimal-leading-zero);position:absolute;left:0;top:0;width:56px;height:56px;border-radius:50%;background:#4F2F6D;color:#fff;display:grid;place-items:center;font:600 17px/1 \"Poppins\",sans-serif;box-shadow:0 0 0 6px #EDE4F5}\n.st-proc-step:last-child::before{background:#FCB900;color:#191919;box-shadow:0 0 0 6px #FFF3CC}\n.st-proc-step:not(:last-child)::after{content:\"\";position:absolute;left:27px;top:62px;bottom:-22px;width:2px;background:linear-gradient(#4F2F6D 0 50%,transparent 0) 0 0/2px 10px repeat-y}\n@media (max-width:767px){.st-proc-step{padding-left:60px!important}.st-proc-step::before{width:44px;height:44px;font-size:15px;box-shadow:0 0 0 4px #EDE4F5}.st-proc-step:not(:last-child)::after{left:21px;top:50px}}\n\n/* testimonials */\n.st-quote .elementor-testimonial-content::before{content:\"\\201C\";display:block;font:700 64px/0.9 Georgia,serif;color:#4F2F6D;margin-bottom:8px}\n.st-quote--accent .elementor-testimonial-content::before{color:#FCB900}\n.st-quote .elementor-widget-testimonial{flex-grow:1;display:flex;flex-direction:column}\n.st-quote .elementor-widget-testimonial>*{flex-grow:1}\n.st-quote .elementor-testimonial-wrapper{display:flex;flex-direction:column;height:100%}\n.st-quote .elementor-testimonial-content{flex:1}\n.st-quote .elementor-testimonial-meta{border-top:1px solid #E3E3E3;padding-top:20px;margin-top:24px}\n.st-quote--accent .elementor-testimonial-meta{border-top-color:rgba(255,255,255,.2)}\n.st-quote .elementor-testimonial-image img{background:#EDE4F5}\n\n/* media splits: hide decorative images on phones */\n@media (max-width:767px){.st-split-media{display:none!important}}</style>",
       "_title": "Page styles (keep at top)",
       "_position": "absolute",
       "_element_width": "initial",
@@ -620,178 +620,6 @@
         }
        },
        "elements": []
-      },
-      {
-       "id": "5a00008",
-       "elType": "widget",
-       "widgetType": "heading",
-       "isInner": false,
-       "settings": {
-        "title": "ASLM 2026 opens in",
-        "header_size": "p",
-        "align": "left",
-        "title_color": "rgba(255,255,255,0.8)",
-        "_margin": {
-         "unit": "px",
-         "top": "12",
-         "right": "0",
-         "bottom": "-8",
-         "left": "0",
-         "isLinked": false
-        },
-        "typography_typography": "custom",
-        "typography_font_family": "Poppins",
-        "typography_font_weight": "600",
-        "typography_font_size": {
-         "unit": "px",
-         "size": 13,
-         "sizes": []
-        },
-        "typography_line_height": {
-         "unit": "em",
-         "size": 1.4,
-         "sizes": []
-        },
-        "typography_text_transform": "uppercase",
-        "typography_letter_spacing": {
-         "unit": "px",
-         "size": 1.6,
-         "sizes": []
-        }
-       },
-       "elements": []
-      },
-      {
-       "id": "5a00009",
-       "elType": "widget",
-       "widgetType": "countdown",
-       "isInner": false,
-       "settings": {
-        "countdown_type": "due_date",
-        "due_date": "2026-12-08 08:00",
-        "show_days": "yes",
-        "show_hours": "yes",
-        "show_minutes": "yes",
-        "show_seconds": "yes",
-        "show_labels": "yes",
-        "custom_labels": "yes",
-        "label_days": "Days",
-        "label_hours": "Hours",
-        "label_minutes": "Minutes",
-        "label_seconds": "Seconds",
-        "view": "block",
-        "container_width": {
-         "unit": "px",
-         "size": 366,
-         "sizes": []
-        },
-        "container_width_mobile": {
-         "unit": "%",
-         "size": 100,
-         "sizes": []
-        },
-        "box_background_color": "rgba(255,255,255,0.1)",
-        "box_border_border": "solid",
-        "box_border_width": {
-         "unit": "px",
-         "top": "1",
-         "right": "1",
-         "bottom": "1",
-         "left": "1",
-         "isLinked": true
-        },
-        "box_border_color": "rgba(255,255,255,0.18)",
-        "box_border_radius": {
-         "unit": "px",
-         "top": "12",
-         "right": "12",
-         "bottom": "12",
-         "left": "12",
-         "isLinked": true
-        },
-        "box_spacing": {
-         "unit": "px",
-         "size": 10,
-         "sizes": []
-        },
-        "box_spacing_mobile": {
-         "unit": "px",
-         "size": 8,
-         "sizes": []
-        },
-        "box_padding": {
-         "unit": "px",
-         "top": "10",
-         "right": "6",
-         "bottom": "8",
-         "left": "6",
-         "isLinked": false
-        },
-        "digits_color": "#FFFFFF",
-        "label_color": "#FCB900",
-        "digits_typography_typography": "custom",
-        "digits_typography_font_family": "Poppins",
-        "digits_typography_font_weight": "700",
-        "digits_typography_font_size": {
-         "unit": "px",
-         "size": 30,
-         "sizes": []
-        },
-        "digits_typography_line_height": {
-         "unit": "em",
-         "size": 1.1,
-         "sizes": []
-        },
-        "digits_typography_font_size_mobile": {
-         "unit": "px",
-         "size": 24,
-         "sizes": []
-        },
-        "label_typography_typography": "custom",
-        "label_typography_font_family": "Poppins",
-        "label_typography_font_weight": "500",
-        "label_typography_font_size": {
-         "unit": "px",
-         "size": 11.5,
-         "sizes": []
-        },
-        "label_typography_line_height": {
-         "unit": "em",
-         "size": 1.3,
-         "sizes": []
-        },
-        "label_typography_font_size_mobile": {
-         "unit": "px",
-         "size": 10,
-         "sizes": []
-        },
-        "label_typography_text_transform": "uppercase",
-        "label_typography_letter_spacing": {
-         "unit": "px",
-         "size": 0.7,
-         "sizes": []
-        },
-        "expire_actions": [
-         "message"
-        ],
-        "message_after_expire": "Happening now: visit us at Table Top T8, CTICC",
-        "message_color": "#191919",
-        "message_typography_typography": "custom",
-        "message_typography_font_family": "Poppins",
-        "message_typography_font_weight": "600",
-        "message_typography_font_size": {
-         "unit": "px",
-         "size": 15,
-         "sizes": []
-        },
-        "message_typography_line_height": {
-         "unit": "em",
-         "size": 1.3,
-         "sizes": []
-        },
-        "_css_classes": "st-countdown"
-       },
-       "elements": []
       }
      ]
     },
@@ -831,7 +659,7 @@
      },
      "elements": [
       {
-       "id": "5a0000a",
+       "id": "5a00008",
        "elType": "widget",
        "widgetType": "image",
        "isInner": false,
@@ -885,7 +713,7 @@
        "elements": []
       },
       {
-       "id": "5a0000b",
+       "id": "5a00009",
        "elType": "widget",
        "widgetType": "text-editor",
        "isInner": false,
@@ -901,7 +729,7 @@
    ]
   },
   {
-   "id": "5a0001d",
+   "id": "5a0001b",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -951,7 +779,7 @@
    },
    "elements": [
     {
-     "id": "5a00018",
+     "id": "5a00016",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -984,7 +812,7 @@
      },
      "elements": [
       {
-       "id": "5a0000c",
+       "id": "5a0000a",
        "elType": "widget",
        "widgetType": "text-editor",
        "isInner": false,
@@ -1017,7 +845,7 @@
        "elements": []
       },
       {
-       "id": "5a00017",
+       "id": "5a00015",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1068,6 +896,82 @@
         }
        },
        "elements": [
+        {
+         "id": "5a0000c",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_justify_content": "center",
+          "min_height": {
+           "unit": "px",
+           "size": 84,
+           "sizes": []
+          },
+          "min_height_mobile": {
+           "unit": "px",
+           "size": 66,
+           "sizes": []
+          },
+          "padding": {
+           "unit": "px",
+           "top": "10",
+           "right": "14",
+           "bottom": "10",
+           "left": "14",
+           "isLinked": false
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "8",
+           "right": "8",
+           "bottom": "8",
+           "left": "8",
+           "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#E3E3E3",
+          "border_radius": {
+           "unit": "px",
+           "top": "15",
+           "right": "15",
+           "bottom": "15",
+           "left": "15",
+           "isLinked": true
+          },
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "5a0000b",
+           "elType": "widget",
+           "widgetType": "image",
+           "isInner": false,
+           "settings": {
+            "align": "center",
+            "image": {
+             "url": "https://sawa-tech.com/wp-content/uploads/2025/11/iso-17100-2015.webp",
+             "id": "",
+             "source": "library",
+             "alt": "ISO 17100:2015 certified — translation services"
+            },
+            "image_size": "full",
+            "_css_classes": "st-badge"
+           },
+           "elements": []
+          }
+         ]
+        },
         {
          "id": "5a0000e",
          "elType": "container",
@@ -1132,10 +1036,10 @@
            "settings": {
             "align": "center",
             "image": {
-             "url": "https://sawa-tech.com/wp-content/uploads/2025/11/iso-17100-2015.webp",
+             "url": "https://sawa-tech.com/wp-content/uploads/2025/11/iso-9001-2015.webp",
              "id": "",
              "source": "library",
-             "alt": "ISO 17100:2015 certified — translation services"
+             "alt": "ISO 9001:2015 certified — quality management"
             },
             "image_size": "full",
             "_css_classes": "st-badge"
@@ -1208,10 +1112,10 @@
            "settings": {
             "align": "center",
             "image": {
-             "url": "https://sawa-tech.com/wp-content/uploads/2025/11/iso-9001-2015.webp",
+             "url": "https://sawa-tech.com/wp-content/uploads/2025/11/iso-18587-2017.webp",
              "id": "",
              "source": "library",
-             "alt": "ISO 9001:2015 certified — quality management"
+             "alt": "ISO 18587:2017 certified — machine translation post-editing"
             },
             "image_size": "full",
             "_css_classes": "st-badge"
@@ -1284,10 +1188,10 @@
            "settings": {
             "align": "center",
             "image": {
-             "url": "https://sawa-tech.com/wp-content/uploads/2025/11/iso-18587-2017.webp",
+             "url": "https://mhellawygap-ui.github.io/sawatech-lp-aslm/elementor-media/badge-hipaa-compliant.png",
              "id": "",
              "source": "library",
-             "alt": "ISO 18587:2017 certified — machine translation post-editing"
+             "alt": "HIPAA-compliant handling of health information"
             },
             "image_size": "full",
             "_css_classes": "st-badge"
@@ -1360,82 +1264,6 @@
            "settings": {
             "align": "center",
             "image": {
-             "url": "https://mhellawygap-ui.github.io/sawatech-lp-aslm/elementor-media/badge-hipaa-compliant.png",
-             "id": "",
-             "source": "library",
-             "alt": "HIPAA-compliant handling of health information"
-            },
-            "image_size": "full",
-            "_css_classes": "st-badge"
-           },
-           "elements": []
-          }
-         ]
-        },
-        {
-         "id": "5a00016",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "flex_direction": "column",
-          "flex_justify_content": "center",
-          "min_height": {
-           "unit": "px",
-           "size": 84,
-           "sizes": []
-          },
-          "min_height_mobile": {
-           "unit": "px",
-           "size": 66,
-           "sizes": []
-          },
-          "padding": {
-           "unit": "px",
-           "top": "10",
-           "right": "14",
-           "bottom": "10",
-           "left": "14",
-           "isLinked": false
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "8",
-           "right": "8",
-           "bottom": "8",
-           "left": "8",
-           "isLinked": true
-          },
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#E3E3E3",
-          "border_radius": {
-           "unit": "px",
-           "top": "15",
-           "right": "15",
-           "bottom": "15",
-           "left": "15",
-           "isLinked": true
-          },
-          "content_width": "full"
-         },
-         "elements": [
-          {
-           "id": "5a00015",
-           "elType": "widget",
-           "widgetType": "image",
-           "isInner": false,
-           "settings": {
-            "align": "center",
-            "image": {
              "url": "https://mhellawygap-ui.github.io/sawatech-lp-aslm/elementor-media/badge-gdpr-compliant.png",
              "id": "",
              "source": "library",
@@ -1453,7 +1281,7 @@
      ]
     },
     {
-     "id": "5a00019",
+     "id": "5a00017",
      "elType": "widget",
      "widgetType": "text-editor",
      "isInner": false,
@@ -1479,7 +1307,7 @@
      "elements": []
     },
     {
-     "id": "5a0001c",
+     "id": "5a0001a",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -1521,7 +1349,7 @@
      },
      "elements": [
       {
-       "id": "5a0001a",
+       "id": "5a00018",
        "elType": "widget",
        "widgetType": "heading",
        "isInner": false,
@@ -1558,7 +1386,7 @@
        "elements": []
       },
       {
-       "id": "5a0001b",
+       "id": "5a00019",
        "elType": "widget",
        "widgetType": "image-carousel",
        "isInner": false,
@@ -1784,7 +1612,7 @@
      "elements": []
     },
     {
-     "id": "5a00022",
+     "id": "5a00020",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -1817,7 +1645,7 @@
      },
      "elements": [
       {
-       "id": "5a00020",
+       "id": "5a0001e",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1846,7 +1674,7 @@
        },
        "elements": [
         {
-         "id": "5a0001e",
+         "id": "5a0001c",
          "elType": "widget",
          "widgetType": "image",
          "isInner": false,
@@ -1872,7 +1700,7 @@
        ]
       },
       {
-       "id": "5a00021",
+       "id": "5a0001f",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1899,7 +1727,7 @@
        },
        "elements": [
         {
-         "id": "5a0001f",
+         "id": "5a0001d",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2532,7 +2360,7 @@
    ]
   },
   {
-   "id": "5a00059",
+   "id": "5a00057",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -2582,7 +2410,7 @@
    },
    "elements": [
     {
-     "id": "5a00058",
+     "id": "5a00056",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -2642,7 +2470,7 @@
      },
      "elements": [
       {
-       "id": "5a00023",
+       "id": "5a00021",
        "elType": "widget",
        "widgetType": "html",
        "isInner": false,
@@ -2654,7 +2482,7 @@
        "elements": []
       },
       {
-       "id": "5a00056",
+       "id": "5a00054",
        "elType": "widget",
        "widgetType": "heading",
        "isInner": false,
@@ -2690,7 +2518,7 @@
        "elements": []
       },
       {
-       "id": "5a00057",
+       "id": "5a00055",
        "elType": "widget",
        "widgetType": "heading",
        "isInner": false,
@@ -2721,7 +2549,7 @@
        "elements": []
       },
       {
-       "id": "5a00024",
+       "id": "5a00022",
        "elType": "widget",
        "widgetType": "text-editor",
        "isInner": false,
@@ -2732,7 +2560,7 @@
        "elements": []
       },
       {
-       "id": "5a00025",
+       "id": "5a00023",
        "elType": "widget",
        "widgetType": "heading",
        "isInner": false,
@@ -2764,7 +2592,7 @@
        "elements": []
       },
       {
-       "id": "5a0003f",
+       "id": "5a0003d",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -2817,7 +2645,7 @@
        },
        "elements": [
         {
-         "id": "5a0002a",
+         "id": "5a00028",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2869,7 +2697,7 @@
          },
          "elements": [
           {
-           "id": "5a00026",
+           "id": "5a00024",
            "elType": "widget",
            "widgetType": "icon",
            "isInner": false,
@@ -2922,7 +2750,7 @@
            "elements": []
           },
           {
-           "id": "5a00029",
+           "id": "5a00027",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -2956,7 +2784,7 @@
            },
            "elements": [
             {
-             "id": "5a00027",
+             "id": "5a00025",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -2988,7 +2816,7 @@
              "elements": []
             },
             {
-             "id": "5a00028",
+             "id": "5a00026",
              "elType": "widget",
              "widgetType": "text-editor",
              "isInner": false,
@@ -3018,7 +2846,7 @@
          ]
         },
         {
-         "id": "5a0002f",
+         "id": "5a0002d",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3070,7 +2898,7 @@
          },
          "elements": [
           {
-           "id": "5a0002b",
+           "id": "5a00029",
            "elType": "widget",
            "widgetType": "icon",
            "isInner": false,
@@ -3123,7 +2951,7 @@
            "elements": []
           },
           {
-           "id": "5a0002e",
+           "id": "5a0002c",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -3157,7 +2985,7 @@
            },
            "elements": [
             {
-             "id": "5a0002c",
+             "id": "5a0002a",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -3189,7 +3017,7 @@
              "elements": []
             },
             {
-             "id": "5a0002d",
+             "id": "5a0002b",
              "elType": "widget",
              "widgetType": "text-editor",
              "isInner": false,
@@ -3219,7 +3047,7 @@
          ]
         },
         {
-         "id": "5a00034",
+         "id": "5a00032",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3271,7 +3099,7 @@
          },
          "elements": [
           {
-           "id": "5a00030",
+           "id": "5a0002e",
            "elType": "widget",
            "widgetType": "icon",
            "isInner": false,
@@ -3324,7 +3152,7 @@
            "elements": []
           },
           {
-           "id": "5a00033",
+           "id": "5a00031",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -3358,7 +3186,7 @@
            },
            "elements": [
             {
-             "id": "5a00031",
+             "id": "5a0002f",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -3390,7 +3218,7 @@
              "elements": []
             },
             {
-             "id": "5a00032",
+             "id": "5a00030",
              "elType": "widget",
              "widgetType": "text-editor",
              "isInner": false,
@@ -3420,7 +3248,7 @@
          ]
         },
         {
-         "id": "5a00039",
+         "id": "5a00037",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3472,7 +3300,7 @@
          },
          "elements": [
           {
-           "id": "5a00035",
+           "id": "5a00033",
            "elType": "widget",
            "widgetType": "icon",
            "isInner": false,
@@ -3525,7 +3353,7 @@
            "elements": []
           },
           {
-           "id": "5a00038",
+           "id": "5a00036",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -3559,7 +3387,7 @@
            },
            "elements": [
             {
-             "id": "5a00036",
+             "id": "5a00034",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -3591,7 +3419,7 @@
              "elements": []
             },
             {
-             "id": "5a00037",
+             "id": "5a00035",
              "elType": "widget",
              "widgetType": "text-editor",
              "isInner": false,
@@ -3621,7 +3449,7 @@
          ]
         },
         {
-         "id": "5a0003e",
+         "id": "5a0003c",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3673,7 +3501,7 @@
          },
          "elements": [
           {
-           "id": "5a0003a",
+           "id": "5a00038",
            "elType": "widget",
            "widgetType": "icon",
            "isInner": false,
@@ -3726,7 +3554,7 @@
            "elements": []
           },
           {
-           "id": "5a0003d",
+           "id": "5a0003b",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -3760,7 +3588,7 @@
            },
            "elements": [
             {
-             "id": "5a0003b",
+             "id": "5a00039",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -3792,7 +3620,7 @@
              "elements": []
             },
             {
-             "id": "5a0003c",
+             "id": "5a0003a",
              "elType": "widget",
              "widgetType": "text-editor",
              "isInner": false,
@@ -3824,7 +3652,7 @@
        ]
       },
       {
-       "id": "5a00040",
+       "id": "5a0003e",
        "elType": "widget",
        "widgetType": "icon",
        "isInner": false,
@@ -3845,7 +3673,7 @@
        "elements": []
       },
       {
-       "id": "5a00052",
+       "id": "5a00050",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -3894,7 +3722,7 @@
        },
        "elements": [
         {
-         "id": "5a00041",
+         "id": "5a0003f",
          "elType": "widget",
          "widgetType": "heading",
          "isInner": false,
@@ -3927,7 +3755,7 @@
          "elements": []
         },
         {
-         "id": "5a0004e",
+         "id": "5a0004c",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3972,7 +3800,7 @@
          },
          "elements": [
           {
-           "id": "5a00044",
+           "id": "5a00042",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -3997,7 +3825,7 @@
            },
            "elements": [
             {
-             "id": "5a00042",
+             "id": "5a00040",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -4033,7 +3861,7 @@
              "elements": []
             },
             {
-             "id": "5a00043",
+             "id": "5a00041",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -4066,7 +3894,7 @@
            ]
           },
           {
-           "id": "5a00047",
+           "id": "5a00045",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4091,7 +3919,7 @@
            },
            "elements": [
             {
-             "id": "5a00045",
+             "id": "5a00043",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -4127,7 +3955,7 @@
              "elements": []
             },
             {
-             "id": "5a00046",
+             "id": "5a00044",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -4160,7 +3988,7 @@
            ]
           },
           {
-           "id": "5a0004a",
+           "id": "5a00048",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4185,7 +4013,7 @@
            },
            "elements": [
             {
-             "id": "5a00048",
+             "id": "5a00046",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -4221,7 +4049,7 @@
              "elements": []
             },
             {
-             "id": "5a00049",
+             "id": "5a00047",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -4254,7 +4082,7 @@
            ]
           },
           {
-           "id": "5a0004d",
+           "id": "5a0004b",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4279,7 +4107,7 @@
            },
            "elements": [
             {
-             "id": "5a0004b",
+             "id": "5a00049",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -4315,7 +4143,7 @@
              "elements": []
             },
             {
-             "id": "5a0004c",
+             "id": "5a0004a",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -4350,7 +4178,7 @@
          ]
         },
         {
-         "id": "5a00051",
+         "id": "5a0004f",
          "elType": "widget",
          "widgetType": "icon-list",
          "isInner": false,
@@ -4359,7 +4187,7 @@
           "_css_classes": "st-result-checks",
           "icon_list": [
            {
-            "_id": "5a0004f",
+            "_id": "5a0004d",
             "text": "Consistent terminology across all deliverables",
             "selected_icon": {
              "value": "fas fa-check",
@@ -4367,7 +4195,7 @@
             }
            },
            {
-            "_id": "5a00050",
+            "_id": "5a0004e",
             "text": "Full adherence to quality requirements",
             "selected_icon": {
              "value": "fas fa-check",
@@ -4411,7 +4239,7 @@
        ]
       },
       {
-       "id": "5a00055",
+       "id": "5a00053",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -4445,7 +4273,7 @@
        },
        "elements": [
         {
-         "id": "5a00053",
+         "id": "5a00051",
          "elType": "widget",
          "widgetType": "button",
          "isInner": false,
@@ -4518,7 +4346,7 @@
          "elements": []
         },
         {
-         "id": "5a00054",
+         "id": "5a00052",
          "elType": "widget",
          "widgetType": "text-editor",
          "isInner": false,
@@ -4549,7 +4377,7 @@
    ]
   },
   {
-   "id": "5a00070",
+   "id": "5a0006e",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -4597,7 +4425,7 @@
    },
    "elements": [
     {
-     "id": "5a0006b",
+     "id": "5a00069",
      "elType": "widget",
      "widgetType": "heading",
      "isInner": false,
@@ -4633,7 +4461,7 @@
      "elements": []
     },
     {
-     "id": "5a0006c",
+     "id": "5a0006a",
      "elType": "widget",
      "widgetType": "text-editor",
      "isInner": false,
@@ -4664,7 +4492,7 @@
      "elements": []
     },
     {
-     "id": "5a0006f",
+     "id": "5a0006d",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -4697,7 +4525,7 @@
      },
      "elements": [
       {
-       "id": "5a0006e",
+       "id": "5a0006c",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -4724,7 +4552,7 @@
        },
        "elements": [
         {
-         "id": "5a00069",
+         "id": "5a00067",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -4756,7 +4584,7 @@
          },
          "elements": [
           {
-           "id": "5a0005c",
+           "id": "5a0005a",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4786,7 +4614,7 @@
            },
            "elements": [
             {
-             "id": "5a0005a",
+             "id": "5a00058",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -4817,7 +4645,7 @@
              "elements": []
             },
             {
-             "id": "5a0005b",
+             "id": "5a00059",
              "elType": "widget",
              "widgetType": "text-editor",
              "isInner": false,
@@ -4844,7 +4672,7 @@
            ]
           },
           {
-           "id": "5a0005f",
+           "id": "5a0005d",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4874,7 +4702,7 @@
            },
            "elements": [
             {
-             "id": "5a0005d",
+             "id": "5a0005b",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -4905,7 +4733,7 @@
              "elements": []
             },
             {
-             "id": "5a0005e",
+             "id": "5a0005c",
              "elType": "widget",
              "widgetType": "text-editor",
              "isInner": false,
@@ -4932,7 +4760,7 @@
            ]
           },
           {
-           "id": "5a00062",
+           "id": "5a00060",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4962,7 +4790,7 @@
            },
            "elements": [
             {
-             "id": "5a00060",
+             "id": "5a0005e",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -4993,7 +4821,7 @@
              "elements": []
             },
             {
-             "id": "5a00061",
+             "id": "5a0005f",
              "elType": "widget",
              "widgetType": "text-editor",
              "isInner": false,
@@ -5020,7 +4848,7 @@
            ]
           },
           {
-           "id": "5a00065",
+           "id": "5a00063",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -5050,7 +4878,7 @@
            },
            "elements": [
             {
-             "id": "5a00063",
+             "id": "5a00061",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -5081,7 +4909,7 @@
              "elements": []
             },
             {
-             "id": "5a00064",
+             "id": "5a00062",
              "elType": "widget",
              "widgetType": "text-editor",
              "isInner": false,
@@ -5108,7 +4936,7 @@
            ]
           },
           {
-           "id": "5a00068",
+           "id": "5a00066",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -5138,7 +4966,7 @@
            },
            "elements": [
             {
-             "id": "5a00066",
+             "id": "5a00064",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -5169,7 +4997,7 @@
              "elements": []
             },
             {
-             "id": "5a00067",
+             "id": "5a00065",
              "elType": "widget",
              "widgetType": "text-editor",
              "isInner": false,
@@ -5200,7 +5028,7 @@
        ]
       },
       {
-       "id": "5a0006d",
+       "id": "5a0006b",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -5229,7 +5057,7 @@
        },
        "elements": [
         {
-         "id": "5a0006a",
+         "id": "5a00068",
          "elType": "widget",
          "widgetType": "image",
          "isInner": false,
@@ -5336,7 +5164,7 @@
      "elements": []
     },
     {
-     "id": "5a00075",
+     "id": "5a00073",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -5369,7 +5197,7 @@
      },
      "elements": [
       {
-       "id": "5a00073",
+       "id": "5a00071",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -5398,7 +5226,7 @@
        },
        "elements": [
         {
-         "id": "5a00072",
+         "id": "5a00070",
          "elType": "widget",
          "widgetType": "image",
          "isInner": false,
@@ -5416,7 +5244,7 @@
        ]
       },
       {
-       "id": "5a00074",
+       "id": "5a00072",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -5443,7 +5271,7 @@
        },
        "elements": [
         {
-         "id": "5a00071",
+         "id": "5a0006f",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -6040,7 +5868,7 @@
    ]
   },
   {
-   "id": "5a0007f",
+   "id": "5a0007d",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -6088,7 +5916,7 @@
    },
    "elements": [
     {
-     "id": "5a00076",
+     "id": "5a00074",
      "elType": "widget",
      "widgetType": "heading",
      "isInner": false,
@@ -6124,7 +5952,7 @@
      "elements": []
     },
     {
-     "id": "5a00077",
+     "id": "5a00075",
      "elType": "widget",
      "widgetType": "text-editor",
      "isInner": false,
@@ -6155,7 +5983,7 @@
      "elements": []
     },
     {
-     "id": "5a0007e",
+     "id": "5a0007c",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -6200,7 +6028,7 @@
      },
      "elements": [
       {
-       "id": "5a00079",
+       "id": "5a00077",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -6254,7 +6082,7 @@
        },
        "elements": [
         {
-         "id": "5a00078",
+         "id": "5a00076",
          "elType": "widget",
          "widgetType": "testimonial",
          "isInner": false,
@@ -6274,6 +6102,135 @@
           "content_content_color": "#333333",
           "name_text_color": "#191919",
           "job_text_color": "#5C5C5C",
+          "image_size": {
+           "unit": "px",
+           "size": 52,
+           "sizes": []
+          },
+          "content_typography_typography": "custom",
+          "content_typography_font_family": "Poppins",
+          "content_typography_font_weight": "400",
+          "content_typography_font_size": {
+           "unit": "px",
+           "size": 15.5,
+           "sizes": []
+          },
+          "content_typography_line_height": {
+           "unit": "em",
+           "size": 1.7,
+           "sizes": []
+          },
+          "content_typography_font_size_mobile": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "name_typography_typography": "custom",
+          "name_typography_font_family": "Poppins",
+          "name_typography_font_weight": "600",
+          "name_typography_font_size": {
+           "unit": "px",
+           "size": 15.5,
+           "sizes": []
+          },
+          "name_typography_line_height": {
+           "unit": "em",
+           "size": 1.35,
+           "sizes": []
+          },
+          "job_typography_typography": "custom",
+          "job_typography_font_family": "Poppins",
+          "job_typography_font_weight": "400",
+          "job_typography_font_size": {
+           "unit": "px",
+           "size": 13.5,
+           "sizes": []
+          },
+          "job_typography_line_height": {
+           "unit": "em",
+           "size": 1.45,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "5a00079",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "column",
+        "padding": {
+         "unit": "px",
+         "top": "32",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": false
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "24",
+         "right": "20",
+         "bottom": "22",
+         "left": "20",
+         "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#4F2F6D",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_color": "#4F2F6D",
+        "border_radius": {
+         "unit": "px",
+         "top": "15",
+         "right": "15",
+         "bottom": "15",
+         "left": "15",
+         "isLinked": true
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 0,
+         "blur": 20,
+         "spread": 0,
+         "color": "rgba(0,0,0,0.08)"
+        },
+        "css_classes": "st-quote st-quote--accent",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "5a00078",
+         "elType": "widget",
+         "widgetType": "testimonial",
+         "isInner": false,
+         "settings": {
+          "testimonial_content": "Our patient-facing materials needed sensitivity and clarity. Sawatech tested terminology with local clinicians and adapted visuals for literacy levels—impactful and respectful.",
+          "testimonial_name": "Aisha Bello",
+          "testimonial_job": "Program Director, NGO (Health)",
+          "testimonial_image": {
+           "url": "https://sawa-tech.com/wp-content/uploads/2023/05/woman-02.webp",
+           "id": "",
+           "source": "library",
+           "alt": ""
+          },
+          "testimonial_image_size": "full",
+          "testimonial_image_position": "aside",
+          "testimonial_alignment": "left",
+          "content_content_color": "rgba(255,255,255,0.88)",
+          "name_text_color": "#FFFFFF",
+          "job_text_color": "rgba(255,255,255,0.75)",
           "image_size": {
            "unit": "px",
            "size": 52,
@@ -6351,135 +6308,6 @@
          "isLinked": false
         },
         "background_background": "classic",
-        "background_color": "#4F2F6D",
-        "border_border": "solid",
-        "border_width": {
-         "unit": "px",
-         "top": "1",
-         "right": "1",
-         "bottom": "1",
-         "left": "1",
-         "isLinked": true
-        },
-        "border_color": "#4F2F6D",
-        "border_radius": {
-         "unit": "px",
-         "top": "15",
-         "right": "15",
-         "bottom": "15",
-         "left": "15",
-         "isLinked": true
-        },
-        "box_shadow_box_shadow_type": "yes",
-        "box_shadow_box_shadow": {
-         "horizontal": 0,
-         "vertical": 0,
-         "blur": 20,
-         "spread": 0,
-         "color": "rgba(0,0,0,0.08)"
-        },
-        "css_classes": "st-quote st-quote--accent",
-        "content_width": "full"
-       },
-       "elements": [
-        {
-         "id": "5a0007a",
-         "elType": "widget",
-         "widgetType": "testimonial",
-         "isInner": false,
-         "settings": {
-          "testimonial_content": "Our patient-facing materials needed sensitivity and clarity. Sawatech tested terminology with local clinicians and adapted visuals for literacy levels—impactful and respectful.",
-          "testimonial_name": "Aisha Bello",
-          "testimonial_job": "Program Director, NGO (Health)",
-          "testimonial_image": {
-           "url": "https://sawa-tech.com/wp-content/uploads/2023/05/woman-02.webp",
-           "id": "",
-           "source": "library",
-           "alt": ""
-          },
-          "testimonial_image_size": "full",
-          "testimonial_image_position": "aside",
-          "testimonial_alignment": "left",
-          "content_content_color": "rgba(255,255,255,0.88)",
-          "name_text_color": "#FFFFFF",
-          "job_text_color": "rgba(255,255,255,0.75)",
-          "image_size": {
-           "unit": "px",
-           "size": 52,
-           "sizes": []
-          },
-          "content_typography_typography": "custom",
-          "content_typography_font_family": "Poppins",
-          "content_typography_font_weight": "400",
-          "content_typography_font_size": {
-           "unit": "px",
-           "size": 15.5,
-           "sizes": []
-          },
-          "content_typography_line_height": {
-           "unit": "em",
-           "size": 1.7,
-           "sizes": []
-          },
-          "content_typography_font_size_mobile": {
-           "unit": "px",
-           "size": 15,
-           "sizes": []
-          },
-          "name_typography_typography": "custom",
-          "name_typography_font_family": "Poppins",
-          "name_typography_font_weight": "600",
-          "name_typography_font_size": {
-           "unit": "px",
-           "size": 15.5,
-           "sizes": []
-          },
-          "name_typography_line_height": {
-           "unit": "em",
-           "size": 1.35,
-           "sizes": []
-          },
-          "job_typography_typography": "custom",
-          "job_typography_font_family": "Poppins",
-          "job_typography_font_weight": "400",
-          "job_typography_font_size": {
-           "unit": "px",
-           "size": 13.5,
-           "sizes": []
-          },
-          "job_typography_line_height": {
-           "unit": "em",
-           "size": 1.45,
-           "sizes": []
-          }
-         },
-         "elements": []
-        }
-       ]
-      },
-      {
-       "id": "5a0007d",
-       "elType": "container",
-       "isInner": true,
-       "settings": {
-        "flex_direction": "column",
-        "padding": {
-         "unit": "px",
-         "top": "32",
-         "right": "28",
-         "bottom": "28",
-         "left": "28",
-         "isLinked": false
-        },
-        "padding_mobile": {
-         "unit": "px",
-         "top": "24",
-         "right": "20",
-         "bottom": "22",
-         "left": "20",
-         "isLinked": false
-        },
-        "background_background": "classic",
         "background_color": "#FFFFFF",
         "border_border": "solid",
         "border_width": {
@@ -6512,7 +6340,7 @@
        },
        "elements": [
         {
-         "id": "5a0007c",
+         "id": "5a0007a",
          "elType": "widget",
          "widgetType": "testimonial",
          "isInner": false,

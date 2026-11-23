@@ -116,10 +116,6 @@ html{scroll-behavior:smooth}
 .st-cobrand{width:fit-content!important;max-width:100%;margin-bottom:4px}
 .st-cobrand-label{white-space:nowrap;padding-right:14px;border-right:1px solid #E3E3E3}
 .st-cobrand-label p{margin:0}
-.st-countdown .elementor-countdown-wrapper{max-width:366px}
-.st-countdown .elementor-countdown-item{-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
-.st-countdown .elementor-countdown-digits{font-variant-numeric:tabular-nums}
-.st-countdown .elementor-countdown-expire--message{display:inline-flex;align-items:center;gap:10px;background:#FCB900;border-radius:100px;padding:10px 18px}
 .st-booth{position:relative}
 .st-booth-tag{position:absolute!important;left:-18px;bottom:28px;width:auto!important;z-index:2}
 .st-booth-tag p{display:flex;flex-direction:column;margin:0;background:#FCB900;color:#191919;border-radius:14px;padding:10px 18px;box-shadow:0 10px 24px rgba(0,0,0,.25);font:500 12px/1.3 "Poppins",sans-serif;letter-spacing:.06em;text-transform:uppercase}
@@ -208,29 +204,6 @@ def header():
     h["elements"].insert(0, styles())
     return h
 
-EVENT_START = "2026-12-08 08:00"   # Elementor countdown uses the WordPress timezone (set Africa/Johannesburg)
-
-def countdown():
-    """Elementor Pro Countdown widget, styled like the preview's glass boxes."""
-    return widget("countdown", countdown_type="due_date", due_date=EVENT_START,
-                  show_days="yes", show_hours="yes", show_minutes="yes", show_seconds="yes",
-                  show_labels="yes", custom_labels="yes",
-                  label_days="Days", label_hours="Hours", label_minutes="Minutes", label_seconds="Seconds",
-                  view="block",
-                  container_width=px(366), container_width_mobile=pct(100),
-                  box_background_color="rgba(255,255,255,0.1)", box_border_border="solid",
-                  box_border_width=box(1), box_border_color="rgba(255,255,255,0.18)",
-                  box_border_radius=box(12), box_spacing=px(10), box_spacing_mobile=px(8),
-                  box_padding=box(10, 6, 8, 6),
-                  digits_color="#FFFFFF", label_color=AMBER,
-                  **font(30, "700", 1.1, mobile=24, prefix="digits_typography"),
-                  **font(11.5, "500", 1.3, mobile=10, prefix="label_typography",
-                         text_transform="uppercase", letter_spacing=px(0.7)),
-                  expire_actions=["message"],
-                  message_after_expire="Happening now: visit us at Table Top T8, CTICC",
-                  message_color=INK, **font(15, "600", 1.3, prefix="message_typography"),
-                  _css_classes="st-countdown")
-
 def hero():
     h = base("1a2b3cd")
     # SVG background: WordPress blocks SVG uploads by default, so the importer would swap in a
@@ -269,10 +242,6 @@ def hero():
             s["icon_indent"] = px(10)
             s["_margin"] = box(6, 0, 0, 0)
             out.append(w)
-            out.append(heading("ASLM 2026 opens in", "p", "rgba(255,255,255,0.8)", align="left",
-                               _margin=box(12, 0, -8, 0),
-                               **font(13, "600", 1.4, text_transform="uppercase", letter_spacing=px(1.6))))
-            out.append(countdown())
             continue
         out.append(w)
     text_col["elements"] = out

@@ -56,7 +56,7 @@
  },
  "content": [
   {
-   "id": "5a00093",
+   "id": "5a00091",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -82,7 +82,7 @@
    },
    "elements": [
     {
-     "id": "5a00091",
+     "id": "5a0008f",
      "elType": "widget",
      "widgetType": "html",
      "isInner": false,
@@ -93,7 +93,7 @@
      "elements": []
     },
     {
-     "id": "5a00090",
+     "id": "5a0008e",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -133,7 +133,7 @@
      },
      "elements": [
       {
-       "id": "5a0008d",
+       "id": "5a0008b",
        "elType": "widget",
        "widgetType": "heading",
        "isInner": false,
@@ -166,7 +166,7 @@
        "elements": []
       },
       {
-       "id": "5a0008e",
+       "id": "5a0008c",
        "elType": "widget",
        "widgetType": "heading",
        "isInner": false,
@@ -197,7 +197,7 @@
        "elements": []
       },
       {
-       "id": "5a0008f",
+       "id": "5a0008d",
        "elType": "widget",
        "widgetType": "text-editor",
        "isInner": false,
@@ -224,7 +224,7 @@
      ]
     },
     {
-     "id": "5a00092",
+     "id": "5a00090",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -249,7 +249,7 @@
      },
      "elements": [
       {
-       "id": "5a0008c",
+       "id": "5a0008a",
        "elType": "widget",
        "widgetType": "form",
        "isInner": false,
@@ -371,7 +371,7 @@
           "required": "true",
           "width": "50",
           "width_mobile": "100",
-          "_id": "5a00080"
+          "_id": "5a0007e"
          },
          {
           "custom_id": "last_name",
@@ -380,7 +380,7 @@
           "required": "true",
           "width": "50",
           "width_mobile": "100",
-          "_id": "5a00081"
+          "_id": "5a0007f"
          },
          {
           "custom_id": "business_email",
@@ -388,7 +388,7 @@
           "field_label": "Business Email",
           "required": "true",
           "width": "100",
-          "_id": "5a00082"
+          "_id": "5a00080"
          },
          {
           "custom_id": "company",
@@ -397,7 +397,7 @@
           "required": "true",
           "width": "50",
           "width_mobile": "100",
-          "_id": "5a00083"
+          "_id": "5a00081"
          },
          {
           "custom_id": "phone",
@@ -407,42 +407,42 @@
           "width": "50",
           "width_mobile": "100",
           "placeholder": "+27 21 300 1810",
-          "_id": "5a00084"
+          "_id": "5a00082"
          },
          {
           "custom_id": "utm_source",
           "field_type": "hidden",
           "field_label": "utm_source",
           "field_value": "",
-          "_id": "5a00085"
+          "_id": "5a00083"
          },
          {
           "custom_id": "utm_medium",
           "field_type": "hidden",
           "field_label": "utm_medium",
           "field_value": "",
-          "_id": "5a00086"
+          "_id": "5a00084"
          },
          {
           "custom_id": "utm_campaign",
           "field_type": "hidden",
           "field_label": "utm_campaign",
           "field_value": "",
-          "_id": "5a00087"
+          "_id": "5a00085"
          },
          {
           "custom_id": "lead_source",
           "field_type": "hidden",
           "field_label": "lead_source",
           "field_value": "",
-          "_id": "5a00088"
+          "_id": "5a00086"
          },
          {
           "custom_id": "lead_type",
           "field_type": "hidden",
           "field_label": "lead_type",
           "field_value": "case_study_download",
-          "_id": "5a00089"
+          "_id": "5a00087"
          },
          {
           "custom_id": "privacy_consent",
@@ -452,13 +452,13 @@
           "width": "100",
           "show_label": "",
           "acceptance_text": "I agree that SawaTech may store and use my details to send this case study and follow up about relevant services, as described in the <a href=\"/privacy-policy/\" target=\"_blank\" rel=\"noopener\">Privacy Policy</a>.",
-          "_id": "5a0008a"
+          "_id": "5a00088"
          },
          {
           "custom_id": "hp_check",
           "field_type": "honeypot",
           "field_label": "Leave empty",
-          "_id": "5a0008b"
+          "_id": "5a00089"
          }
         ],
         "button_text": "Download the Case Study",

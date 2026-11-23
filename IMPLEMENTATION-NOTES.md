@@ -28,9 +28,8 @@ Order matters. The popup has to exist before the page's download button can poin
 5. **Consultation form:** set *Email → To* (sales inbox), as before (§4).
 6. **Custom Code:** replace the old snippet with the updated `elementor/custom-code-attribution-ga4.html`. It now covers both forms.
 7. **Page styles** live in an HTML widget named *"Page styles (keep at top)"* inside the header container. Don't delete it: the ribbon, flow connectors, process numbers, quote marks and logo sizing depend on it. Page-level Custom CSS is now empty.
-8. **Countdown (hero):** Elementor Pro's *Countdown* widget targets **2026-12-08 08:00** in the **WordPress timezone**. Set *Settings → General → Timezone* to **Johannesburg** (UTC+2), or the countdown will be off by your server's offset. Once it reaches zero, it shows "Happening now: visit us at Table Top T8, CTICC". The widget has only one expiry message, so **after 11 December** either change that message to "Thank you for visiting us at ASLM 2026" or remove the countdown. The static preview switches automatically.
-9. **Hero images:** the ASLM 2026 logo and the Table Top T8 table photo import from GitHub Pages (`docs/elementor-media/`); the sources are in `media/`. The table image is a visual of the planned stand. Swap in a real photo from the event if you have one.
-10. **QA** with §8, plus: open the popup, submit it, confirm the PDF opens and the email arrives, then check Elementor → Submissions for both forms.
+8. **Hero images:** the ASLM 2026 logo and the Table Top T8 table photo import from GitHub Pages (`docs/elementor-media/`); the sources are in `media/`. The table image is a visual of the planned stand. Swap in a real photo from the event if you have one.
+9. **QA** with §8, plus: open the popup, submit it, confirm the PDF opens and the email arrives, then check Elementor → Submissions for both forms.
 
 **Editing later:** change `tools/build_elementor.py` and re-run it rather than hand-editing the JSON, so both templates stay in sync with the preview.
 
