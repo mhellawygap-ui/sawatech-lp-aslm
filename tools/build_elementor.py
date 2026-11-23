@@ -245,9 +245,9 @@ def hero():
     for w in text_col["elements"]:
         s = w["settings"]
         kind = w.get("widgetType")
-        if kind == "heading" and s.get("header_size") == "p":          # eyebrow
-            s["title"] = "Visit us at Table Top T8"
+        if kind == "heading" and s.get("header_size") == "p":          # eyebrow: replaced by the co-brand card
             out.append(cobrand())
+            continue
         if kind == "heading" and s.get("header_size") == "h1":
             s.update(font(46, "700", 1.2, tablet=40, mobile=27, letter_spacing_mobile=px(-0.4)))
         if kind == "text-editor":
@@ -262,10 +262,18 @@ def hero():
             ]
             s["view_mobile"] = "traditional"
         if kind == "button":
+            # Same size as the live sawa-tech.com hero buttons: 64px tall, 18px/600, 30px side padding, pill.
+            s.update(font(18, "600", 1, mobile=16))
+            s["text_padding"] = box(23, 30)
+            s["text_padding_mobile"] = box(24, 20)
+            s["icon_indent"] = px(10)
+            s["_margin"] = box(6, 0, 0, 0)
+            out.append(w)
             out.append(heading("ASLM 2026 opens in", "p", "rgba(255,255,255,0.8)", align="left",
-                               _margin=box(10, 0, -8, 0),
+                               _margin=box(12, 0, -8, 0),
                                **font(13, "600", 1.4, text_transform="uppercase", letter_spacing=px(1.6))))
             out.append(countdown())
+            continue
         out.append(w)
     text_col["elements"] = out
     booth = image(MEDIA + "sawatech-aslm2026-table-top-t8.webp",

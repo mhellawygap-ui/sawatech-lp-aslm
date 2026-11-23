@@ -85,14 +85,16 @@ a{color:var(--st-primary)}
 .hero__event{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-top:24px;font:500 15px/1.4 "Poppins",sans-serif;color:#fff}
 .hero__event span{display:inline-flex;align-items:center;gap:8px}
 .hero__event svg{width:18px;height:18px;color:var(--st-amber);flex:none}
-.hero__cta{margin-top:32px}
+.hero__cta{margin-top:30px}
+.hero__cta .btn{min-height:64px;padding:10px 30px;font-size:18px;font-weight:600}  /* = live sawa-tech.com hero buttons */
+.hero__cta .btn svg{width:20px;height:20px}
 .hero__media{justify-self:end;width:100%;max-width:500px}
-.cobrand{display:flex;width:fit-content;align-items:center;gap:14px;background:#fff;border-radius:14px;padding:8px 14px 8px 16px;margin-bottom:22px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.cobrand{display:flex;width:fit-content;align-items:center;gap:14px;background:#fff;border-radius:14px;padding:8px 14px 8px 16px;margin-bottom:26px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
 .cobrand__label{font:600 11px/1.25 "Poppins",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--st-primary);white-space:nowrap;padding-right:14px;border-right:1px solid var(--st-border)}
 .cobrand img{width:150px;height:auto}
 .hero__event{list-style:none;padding:0;margin-bottom:0}
 .hero__event li{display:inline-flex;align-items:center;gap:8px}
-.countdown{margin-top:26px}
+.countdown{margin-top:30px}
 .countdown__label{font:600 13px/1.4 "Poppins",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:10px}
 .countdown__grid{display:grid;grid-template-columns:repeat(4,minmax(0,84px));gap:10px}
 .countdown__unit{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:10px 6px 8px;text-align:center;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
@@ -114,9 +116,9 @@ a{color:var(--st-primary)}
   .hero__lead{font-size:14.5px;line-height:1.65;margin-top:14px}
   .hero__event{font-size:14px;margin-top:16px}
   .hero__cta{margin-top:22px}
-  .hero__cta .btn{width:100%}
+  .hero__cta .btn{width:100%;font-size:16px;padding:10px 20px}
   .hero__media{justify-self:center;max-width:340px;margin:8px 0 0}
-  .cobrand{margin-bottom:16px;padding:6px 12px}
+  .cobrand{margin-bottom:20px;padding:6px 12px}
   .cobrand img{width:124px}
   .hero__event{flex-direction:column;align-items:flex-start;gap:6px}
   .countdown{margin-top:20px}
@@ -405,7 +407,6 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--st-prima
         <span class="cobrand__label">Exhibiting at</span>
         <img src="https://sawa-tech.com/wp-content/uploads/2026/11/aslm-2026-logo.png" width="601" height="290" alt="ASLM 2026 Biennial Conference, 8–11 December, Cape Town, South Africa">
       </div>
-      <span class="eyebrow">Visit us at Table Top T8</span>
       <h1 id="hero-title">Clear Communication. Stronger Health Outcomes Across Africa.</h1>
       <p class="hero__lead">Accurate, culturally appropriate multilingual content for clinical research, laboratory and patient communications across Africa and the Middle East.</p>
       <ul class="hero__event" aria-label="Event details">
@@ -413,6 +414,11 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--st-prima
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Cape Town International Convention Centre</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h18M5 8v12M19 8v12M7 8V5h10v3"/></svg>Table Top T8</li>
       </ul>
+
+      <div class="hero__cta">
+        <a class="btn btn--light js-cta" href="#discuss" data-cta="hero">Discuss Your Localization Needs
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+      </div>
 
       <div class="countdown" id="countdown" data-start="2026-12-08T08:00:00+02:00" data-end="2026-12-11T17:00:00+02:00">
         <p class="countdown__label" id="countdown-label">ASLM 2026 opens in</p>
@@ -426,10 +432,6 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--st-prima
         <p class="countdown__live" hidden></p>
       </div>
 
-      <div class="hero__cta">
-        <a class="btn btn--light js-cta" href="#discuss" data-cta="hero">Discuss Your Localization Needs
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
-      </div>
     </div>
     <figure class="hero__media booth">
       <img src="https://sawa-tech.com/wp-content/uploads/2026/11/sawatech-aslm2026-table-top-t8.webp"
