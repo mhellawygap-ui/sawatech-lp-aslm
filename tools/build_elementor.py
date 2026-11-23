@@ -113,6 +113,18 @@ a:focus-visible,.elementor-button:focus-visible{outline:3px solid #191919;outlin
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .st-hero h1{max-width:22ch}
+.st-cobrand{width:fit-content!important;max-width:100%;margin-bottom:4px}
+.st-cobrand-label{white-space:nowrap;padding-right:14px;border-right:1px solid #E3E3E3}
+.st-cobrand-label p{margin:0}
+.st-countdown .elementor-countdown-wrapper{max-width:366px}
+.st-countdown .elementor-countdown-item{-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.st-countdown .elementor-countdown-digits{font-variant-numeric:tabular-nums}
+.st-countdown .elementor-countdown-expire--message{display:inline-flex;align-items:center;gap:10px;background:#FCB900;border-radius:100px;padding:10px 18px}
+.st-booth{position:relative}
+.st-booth-tag{position:absolute!important;left:-18px;bottom:28px;width:auto!important;z-index:2}
+.st-booth-tag p{display:flex;flex-direction:column;margin:0;background:#FCB900;color:#191919;border-radius:14px;padding:10px 18px;box-shadow:0 10px 24px rgba(0,0,0,.25);font:500 12px/1.3 "Poppins",sans-serif;letter-spacing:.06em;text-transform:uppercase}
+.st-booth-tag strong{font-size:20px;line-height:1.2;letter-spacing:0;text-transform:none;font-weight:700}
+@media (max-width:767px){.st-booth-tag{left:calc(50% - 158px);bottom:14px}.st-booth-tag p{padding:8px 14px}.st-booth-tag strong{font-size:17px}}
 .st-hero{background-image:url("https://sawa-tech.com/wp-content/uploads/2022/02/layered-waves-bg-03.svg");background-position:center;background-size:cover;background-repeat:no-repeat}
 
 /* trust band */
@@ -196,6 +208,29 @@ def header():
     h["elements"].insert(0, styles())
     return h
 
+EVENT_START = "2026-12-08 08:00"   # Elementor countdown uses the WordPress timezone (set Africa/Johannesburg)
+
+def countdown():
+    """Elementor Pro Countdown widget, styled like the preview's glass boxes."""
+    return widget("countdown", countdown_type="due_date", due_date=EVENT_START,
+                  show_days="yes", show_hours="yes", show_minutes="yes", show_seconds="yes",
+                  show_labels="yes", custom_labels="yes",
+                  label_days="Days", label_hours="Hours", label_minutes="Minutes", label_seconds="Seconds",
+                  view="block",
+                  container_width=px(366), container_width_mobile=pct(100),
+                  box_background_color="rgba(255,255,255,0.1)", box_border_border="solid",
+                  box_border_width=box(1), box_border_color="rgba(255,255,255,0.18)",
+                  box_border_radius=box(12), box_spacing=px(10), box_spacing_mobile=px(8),
+                  box_padding=box(10, 6, 8, 6),
+                  digits_color="#FFFFFF", label_color=AMBER,
+                  **font(30, "700", 1.1, mobile=24, prefix="digits_typography"),
+                  **font(11.5, "500", 1.3, mobile=10, prefix="label_typography",
+                         text_transform="uppercase", letter_spacing=px(0.7)),
+                  expire_actions=["message"],
+                  message_after_expire="Happening now: visit us at Table Top T8, CTICC",
+                  message_color=INK, **font(15, "600", 1.3, prefix="message_typography"),
+                  _css_classes="st-countdown")
+
 def hero():
     h = base("1a2b3cd")
     # SVG background: WordPress blocks SVG uploads by default, so the importer would swap in a
@@ -205,15 +240,60 @@ def hero():
     text_col, media_col = h["elements"]
     text_col["settings"]["width"] = pct(62)
     media_col["settings"]["width"] = pct(38)
+    media_col["settings"]["width_tablet"] = pct(38)
+    out = []
     for w in text_col["elements"]:
         s = w["settings"]
-        if w.get("widgetType") == "heading" and s.get("header_size") == "h1":
+        kind = w.get("widgetType")
+        if kind == "heading" and s.get("header_size") == "p":          # eyebrow
+            s["title"] = "Visit us at Table Top T8"
+            out.append(cobrand())
+        if kind == "heading" and s.get("header_size") == "h1":
             s.update(font(46, "700", 1.2, tablet=40, mobile=27, letter_spacing_mobile=px(-0.4)))
-        if w.get("widgetType") == "text-editor":
+        if kind == "text-editor":
             s["editor"] = ("<p>Accurate, culturally appropriate multilingual content for clinical research, "
                            "laboratory and patient communications across Africa and the Middle East.</p>")
             s["typography_font_size_mobile"] = px(14.5)
+        if kind == "icon-list":
+            s["icon_list"] = [
+                {"_id": uid(), "text": "8–11 December 2026", "selected_icon": fa("far fa-calendar", "fa-regular")},
+                {"_id": uid(), "text": "Cape Town International Convention Centre", "selected_icon": fa("fas fa-map-marker-alt")},
+                {"_id": uid(), "text": "Table Top T8", "selected_icon": fa("fas fa-store")},
+            ]
+            s["view_mobile"] = "traditional"
+        if kind == "button":
+            out.append(heading("ASLM 2026 opens in", "p", "rgba(255,255,255,0.8)", align="left",
+                               _margin=box(10, 0, -8, 0),
+                               **font(13, "600", 1.4, text_transform="uppercase", letter_spacing=px(1.6))))
+            out.append(countdown())
+        out.append(w)
+    text_col["elements"] = out
+    booth = image(MEDIA + "sawatech-aslm2026-table-top-t8.webp",
+                  "SawaTech exhibition table at ASLM 2026: branded roll-up banners, brochures, a laptop and a Table Top T8 sign",
+                  width=px(500), width_mobile=px(340), align="right", align_mobile="center",
+                  image_border_border="solid", image_border_width=box(6), image_border_color="rgba(255,255,255,0.95)",
+                  image_border_radius=box(20),
+                  image_box_shadow_box_shadow_type="yes",
+                  image_box_shadow_box_shadow={"horizontal": 0, "vertical": 24, "blur": 50, "spread": 0, "color": "rgba(0,0,0,0.35)"})
+    tag = widget("text-editor", editor="<p><span>Find us at</span><strong>Table Top T8</strong></p>",
+                 _css_classes="st-booth-tag", _title="Booth tag")
+    media_col["elements"] = [booth, tag]
+    media_col["settings"]["css_classes"] = "st-booth"
     return h
+
+def cobrand():
+    return container([
+        widget("text-editor", editor="<p>Exhibiting at</p>", text_color=P, _css_classes="st-cobrand-label",
+               **font(11, "600", 1.25, text_transform="uppercase", letter_spacing=px(1.1))),
+        image(MEDIA + "aslm-2026-logo.png", "ASLM 2026 Biennial Conference, 8–11 December, Cape Town, South Africa",
+              width=px(150), width_mobile=px(124)),
+    ], flex_direction="row", flex_direction_mobile="row", flex_wrap_mobile="nowrap", flex_align_items="center",
+       flex_gap=gap(14),
+       padding=box(8, 14, 8, 16), padding_mobile=box(6, 12),
+       background_background="classic", background_color="#FFFFFF", border_radius=box(14),
+       box_shadow_box_shadow_type="yes",
+       box_shadow_box_shadow={"horizontal": 0, "vertical": 8, "blur": 24, "spread": 0, "color": "rgba(0,0,0,0.18)"},
+       css_classes="st-cobrand", _title="ASLM co-branding")
 
 def badge(url, alt):
     return container([image(url, alt, cls="st-badge", align="center")],

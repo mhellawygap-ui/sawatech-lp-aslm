@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="https://sawa-tech.com/wp-content/uploads/2025/08/1-Healthcare-Translation-Services-That-Put-Patient-Safety-First.webp">
+<link rel="preload" as="image" href="https://sawa-tech.com/wp-content/uploads/2026/11/sawatech-aslm2026-table-top-t8.webp">
 <style>
 /* =====================================================================
    SawaTech × ASLM 2026 — static preview
@@ -87,6 +87,23 @@ a{color:var(--st-primary)}
 .hero__event svg{width:18px;height:18px;color:var(--st-amber);flex:none}
 .hero__cta{margin-top:32px}
 .hero__media{justify-self:end;width:100%;max-width:500px}
+.cobrand{display:flex;width:fit-content;align-items:center;gap:14px;background:#fff;border-radius:14px;padding:8px 14px 8px 16px;margin-bottom:22px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.cobrand__label{font:600 11px/1.25 "Poppins",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--st-primary);white-space:nowrap;padding-right:14px;border-right:1px solid var(--st-border)}
+.cobrand img{width:150px;height:auto}
+.hero__event{list-style:none;padding:0;margin-bottom:0}
+.hero__event li{display:inline-flex;align-items:center;gap:8px}
+.countdown{margin-top:26px}
+.countdown__label{font:600 13px/1.4 "Poppins",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:10px}
+.countdown__grid{display:grid;grid-template-columns:repeat(4,minmax(0,84px));gap:10px}
+.countdown__unit{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:10px 6px 8px;text-align:center;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.countdown__num{display:block;font:700 30px/1.1 "Poppins",sans-serif;color:#fff;font-variant-numeric:tabular-nums}
+.countdown__name{display:block;margin-top:2px;font:500 11.5px/1.3 "Poppins",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--st-amber)}
+.countdown__live{display:inline-flex;align-items:center;gap:10px;background:var(--st-amber);color:var(--st-black);border-radius:var(--radius-pill);padding:10px 18px;font:600 15px/1.3 "Poppins",sans-serif}
+.countdown__live::before{content:"";width:10px;height:10px;border-radius:50%;background:#B3261E;box-shadow:0 0 0 4px rgba(179,38,30,.25)}
+.booth{position:relative;margin:0}
+.booth img{width:100%;border-radius:20px;border:6px solid rgba(255,255,255,.95);box-shadow:0 24px 50px rgba(0,0,0,.35)}
+.booth__tag{position:absolute;left:-18px;bottom:28px;display:flex;flex-direction:column;background:var(--st-amber);color:var(--st-black);border-radius:14px;padding:10px 18px;box-shadow:0 10px 24px rgba(0,0,0,.25);font:500 12px/1.3 "Poppins",sans-serif;letter-spacing:.06em;text-transform:uppercase}
+.booth__tag strong{font-size:20px;line-height:1.2;letter-spacing:0;text-transform:none;font-weight:700}
 @media (max-width:1024px){
   .hero h1{font-size:40px}
   .hero .container{gap:24px}
@@ -98,7 +115,16 @@ a{color:var(--st-primary)}
   .hero__event{font-size:14px;margin-top:16px}
   .hero__cta{margin-top:22px}
   .hero__cta .btn{width:100%}
-  .hero__media{justify-self:center;max-width:200px;margin:4px 0 -20px}
+  .hero__media{justify-self:center;max-width:340px;margin:8px 0 0}
+  .cobrand{margin-bottom:16px;padding:6px 12px}
+  .cobrand img{width:124px}
+  .hero__event{flex-direction:column;align-items:flex-start;gap:6px}
+  .countdown{margin-top:20px}
+  .countdown__grid{grid-template-columns:repeat(4,1fr);gap:8px}
+  .countdown__num{font-size:24px}
+  .countdown__name{font-size:10px}
+  .booth__tag{left:12px;bottom:14px;padding:8px 14px}
+  .booth__tag strong{font-size:17px}
   .hero h1{font-size:27px;letter-spacing:-.015em}
 }
 
@@ -375,23 +401,42 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--st-prima
 <section class="hero on-dark" aria-labelledby="hero-title">
   <div class="container">
     <div class="hero__text">
-      <span class="eyebrow">SawaTech at ASLM 2026</span>
+      <div class="cobrand">
+        <span class="cobrand__label">Exhibiting at</span>
+        <img src="https://sawa-tech.com/wp-content/uploads/2026/11/aslm-2026-logo.png" width="601" height="290" alt="ASLM 2026 Biennial Conference, 8–11 December, Cape Town, South Africa">
+      </div>
+      <span class="eyebrow">Visit us at Table Top T8</span>
       <h1 id="hero-title">Clear Communication. Stronger Health Outcomes Across Africa.</h1>
       <p class="hero__lead">Accurate, culturally appropriate multilingual content for clinical research, laboratory and patient communications across Africa and the Middle East.</p>
-      <p class="hero__event">
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>ASLM 2026 | 8–11 December</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Cape Town, South Africa</span>
-      </p>
+      <ul class="hero__event" aria-label="Event details">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>8–11 December 2026</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Cape Town International Convention Centre</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h18M5 8v12M19 8v12M7 8V5h10v3"/></svg>Table Top T8</li>
+      </ul>
+
+      <div class="countdown" id="countdown" data-start="2026-12-08T08:00:00+02:00" data-end="2026-12-11T17:00:00+02:00">
+        <p class="countdown__label" id="countdown-label">ASLM 2026 opens in</p>
+        <div class="countdown__grid" role="timer" aria-labelledby="countdown-label" aria-describedby="countdown-sr">
+          <div class="countdown__unit"><span class="countdown__num" data-unit="d">--</span><span class="countdown__name">Days</span></div>
+          <div class="countdown__unit"><span class="countdown__num" data-unit="h">--</span><span class="countdown__name">Hours</span></div>
+          <div class="countdown__unit"><span class="countdown__num" data-unit="m">--</span><span class="countdown__name">Minutes</span></div>
+          <div class="countdown__unit"><span class="countdown__num" data-unit="s">--</span><span class="countdown__name">Seconds</span></div>
+        </div>
+        <p class="visually-hidden" id="countdown-sr" aria-live="polite">ASLM 2026 opens on 8 December 2026 at 08:00, Cape Town time.</p>
+        <p class="countdown__live" hidden></p>
+      </div>
+
       <div class="hero__cta">
         <a class="btn btn--light js-cta" href="#discuss" data-cta="hero">Discuss Your Localization Needs
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
       </div>
     </div>
-    <div class="hero__media">
-      <img src="https://sawa-tech.com/wp-content/uploads/2025/08/1-Healthcare-Translation-Services-That-Put-Patient-Safety-First.webp"
-           width="1200" height="1200" fetchpriority="high"
-           alt="Healthcare professional in a white coat holding a clipboard, representing accurate healthcare translation">
-    </div>
+    <figure class="hero__media booth">
+      <img src="https://sawa-tech.com/wp-content/uploads/2026/11/sawatech-aslm2026-table-top-t8.webp"
+           width="1000" height="1000" fetchpriority="high"
+           alt="SawaTech exhibition table at ASLM 2026: branded roll-up banners, brochures, a laptop and a Table Top T8 sign">
+      <figcaption class="booth__tag"><span>Find us at</span><strong>Table Top T8</strong></figcaption>
+    </figure>
   </div>
 </section>
 
@@ -835,6 +880,28 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--st-prima
   document.getElementById('form-field-landing_page').value=location.origin+location.pathname;
 
   document.getElementById('yr').textContent=new Date().getFullYear();
+
+  /* ---- Event countdown (hero). Times are fixed to Cape Town (UTC+2) via ISO offsets. ---- */
+  var cd=document.getElementById('countdown');
+  if(cd){
+    var start=Date.parse(cd.dataset.start), end=Date.parse(cd.dataset.end);
+    var nums={}; cd.querySelectorAll('[data-unit]').forEach(function(n){nums[n.dataset.unit]=n;});
+    var label=document.getElementById('countdown-label'), sr=document.getElementById('countdown-sr');
+    var grid=cd.querySelector('.countdown__grid'), live=cd.querySelector('.countdown__live'), lastMin=-1, timer;
+    function pad(n){return (n<10?'0':'')+n;}
+    function tick(){
+      var now=Date.now();
+      if(now>=start){
+        clearInterval(timer); grid.hidden=true; label.hidden=true; live.hidden=false;
+        live.textContent= now<end ? 'Happening now: visit us at Table Top T8, CTICC' : 'Thank you for visiting us at ASLM 2026';
+        sr.textContent=live.textContent; return;
+      }
+      var t=Math.floor((start-now)/1000), d=Math.floor(t/86400), h=Math.floor(t%86400/3600), m=Math.floor(t%3600/60), sec=t%60;
+      nums.d.textContent=d; nums.h.textContent=pad(h); nums.m.textContent=pad(m); nums.s.textContent=pad(sec);
+      if(m!==lastMin){ lastMin=m; sr.textContent=d+' days, '+h+' hours and '+m+' minutes until ASLM 2026 opens.'; }
+    }
+    tick(); timer=setInterval(tick,1000);
+  }
 
   /* Logo marquee pause/play (WCAG 2.2.2). Also pauses on hover/focus via CSS. */
   var mq=document.querySelector('.marquee'), tg=document.querySelector('.marquee-toggle');

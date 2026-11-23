@@ -28,6 +28,8 @@ MAX_W = {
 LOCAL = {
     "sawatech-case-study-clinical-trial-swahili.pdf":
         ROOT / "case-study" / "sawatech-case-study-clinical-trial-swahili.pdf",
+    "aslm-2026-logo.png": ROOT / "media" / "aslm-2026-logo.png",
+    "sawatech-aslm2026-table-top-t8.webp": ROOT / "media" / "sawatech-aslm2026-table-top-t8.webp",
 }
 
 def fetch(url, name):
