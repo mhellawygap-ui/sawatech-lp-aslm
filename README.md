@@ -6,6 +6,7 @@ Conversion landing page for SawaTech's participation in ASLM 2026 (8–11 Decemb
 |---|---|
 | `aslm-2026-preview.html` | Static, responsive review copy. Open it in a browser. The form is simulated. |
 | `elementor/sawatech-aslm2026-elementor.json` | Elementor page template v2: hero, trust band (ISO / HIPAA / GDPR + client logos), capabilities, case study with request-to-result flow, process, why-us, testimonials, consultation form, footer. |
+| `elementor/sawatech-aslm2026-hero.json` | Hero section only (container template) for swapping the hero on an existing page. |
 | `elementor/sawatech-aslm2026-case-study-popup.json` | Elementor Pro **popup** template: case-study download form (`sawatech_case_study`) that redirects to the PDF. |
 | `case-study/sawatech-case-study-clinical-trial-swahili.pdf` | The full case study. Upload it to the WordPress Media Library. |
 | `tools/build_elementor.py` | Generates both JSON templates. Edit it, not the JSON, then run `python3 tools/build_elementor.py`. |

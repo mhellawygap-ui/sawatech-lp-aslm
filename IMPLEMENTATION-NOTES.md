@@ -31,6 +31,8 @@ Order matters. The popup has to exist before the page's download button can poin
 8. **Hero images:** the ASLM 2026 logo and the Table Top T8 table photo import from GitHub Pages (`docs/elementor-media/`); the sources are in `media/`. The table image is a visual of the planned stand. Swap in a real photo from the event if you have one.
 9. **QA** with §8, plus: open the popup, submit it, confirm the PDF opens and the email arrives, then check Elementor → Submissions for both forms.
 
+**Updating only the hero:** import `elementor/sawatech-aslm2026-hero.json` (a container template). On the page, delete the old hero container, keeping the header bar above it. Then *folder icon → My Templates → "ASLM 2026 – Hero" → Insert* and drag it to just below the header. It carries its own *"Hero styles (keep)"* HTML widget, so it works whether or not the full page-styles widget is present.
+
 **Editing later:** change `tools/build_elementor.py` and re-run it rather than hand-editing the JSON, so both templates stay in sync with the preview.
 
 ---

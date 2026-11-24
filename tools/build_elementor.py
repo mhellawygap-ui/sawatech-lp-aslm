@@ -602,12 +602,30 @@ def popup():
         "content": [root],
     }
 
+def hero_only():
+    """Hero section on its own, as an Elementor container template.
+
+    Carries its own <style> (hero rules only) so it also works when inserted into a page that
+    doesn't have the full page-styles widget. Duplicating those rules on the full page is harmless."""
+    h = hero()
+    rules = [l for l in CSS.strip().splitlines()
+             if any(k in l for k in (".st-hero", ".st-cobrand", ".st-booth"))]
+    css = widget("html", html="<style>" + "\n".join(rules) + "</style>", _title="Hero styles (keep)",
+                 _position="absolute", _element_width="initial", _element_custom_width=px(0),
+                 _offset_x=px(0), _offset_y=px(0))
+    h["elements"][0]["elements"].insert(0, css)
+    h["settings"]["_title"] = "Hero — SawaTech at ASLM 2026"
+    return {"version": "0.4", "title": "ASLM 2026 – Hero", "type": "container",
+            "page_settings": [], "content": [h]}
+
 def main():
+    (ROOT / "elementor" / "sawatech-aslm2026-hero.json").write_text(
+        json.dumps(hero_only(), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     (ROOT / "elementor" / "sawatech-aslm2026-elementor.json").write_text(
         json.dumps(page(), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     (ROOT / "elementor" / "sawatech-aslm2026-case-study-popup.json").write_text(
         json.dumps(popup(), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print("wrote page + popup templates")
+    print("wrote page, hero and popup templates")
 
 if __name__ == "__main__":
     main()

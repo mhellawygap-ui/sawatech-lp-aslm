@@ -48,7 +48,7 @@
    },
    "elements": [
     {
-     "id": "5a00001",
+     "id": "5a0000a",
      "elType": "widget",
      "widgetType": "html",
      "isInner": false,
@@ -286,7 +286,7 @@
      },
      "elements": [
       {
-       "id": "5a00004",
+       "id": "5a0000d",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -341,7 +341,7 @@
        },
        "elements": [
         {
-         "id": "5a00002",
+         "id": "5a0000b",
          "elType": "widget",
          "widgetType": "text-editor",
          "isInner": false,
@@ -372,7 +372,7 @@
          "elements": []
         },
         {
-         "id": "5a00003",
+         "id": "5a0000c",
          "elType": "widget",
          "widgetType": "image",
          "isInner": false,
@@ -479,7 +479,7 @@
         "view": "inline",
         "icon_list": [
          {
-          "_id": "5a00005",
+          "_id": "5a0000e",
           "text": "8–11 December 2026",
           "selected_icon": {
            "value": "far fa-calendar",
@@ -487,7 +487,7 @@
           }
          },
          {
-          "_id": "5a00006",
+          "_id": "5a0000f",
           "text": "Cape Town International Convention Centre",
           "selected_icon": {
            "value": "fas fa-map-marker-alt",
@@ -495,7 +495,7 @@
           }
          },
          {
-          "_id": "5a00007",
+          "_id": "5a00010",
           "text": "Table Top T8",
           "selected_icon": {
            "value": "fas fa-store",
@@ -659,7 +659,7 @@
      },
      "elements": [
       {
-       "id": "5a00008",
+       "id": "5a00011",
        "elType": "widget",
        "widgetType": "image",
        "isInner": false,
@@ -713,7 +713,7 @@
        "elements": []
       },
       {
-       "id": "5a00009",
+       "id": "5a00012",
        "elType": "widget",
        "widgetType": "text-editor",
        "isInner": false,
@@ -729,7 +729,7 @@
    ]
   },
   {
-   "id": "5a0001b",
+   "id": "5a00024",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -779,7 +779,7 @@
    },
    "elements": [
     {
-     "id": "5a00016",
+     "id": "5a0001f",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -812,7 +812,7 @@
      },
      "elements": [
       {
-       "id": "5a0000a",
+       "id": "5a00013",
        "elType": "widget",
        "widgetType": "text-editor",
        "isInner": false,
@@ -845,7 +845,7 @@
        "elements": []
       },
       {
-       "id": "5a00015",
+       "id": "5a0001e",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -897,7 +897,7 @@
        },
        "elements": [
         {
-         "id": "5a0000c",
+         "id": "5a00015",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -953,7 +953,7 @@
          },
          "elements": [
           {
-           "id": "5a0000b",
+           "id": "5a00014",
            "elType": "widget",
            "widgetType": "image",
            "isInner": false,
@@ -973,7 +973,7 @@
          ]
         },
         {
-         "id": "5a0000e",
+         "id": "5a00017",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1029,7 +1029,7 @@
          },
          "elements": [
           {
-           "id": "5a0000d",
+           "id": "5a00016",
            "elType": "widget",
            "widgetType": "image",
            "isInner": false,
@@ -1049,7 +1049,7 @@
          ]
         },
         {
-         "id": "5a00010",
+         "id": "5a00019",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1105,7 +1105,7 @@
          },
          "elements": [
           {
-           "id": "5a0000f",
+           "id": "5a00018",
            "elType": "widget",
            "widgetType": "image",
            "isInner": false,
@@ -1125,7 +1125,7 @@
          ]
         },
         {
-         "id": "5a00012",
+         "id": "5a0001b",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1181,7 +1181,7 @@
          },
          "elements": [
           {
-           "id": "5a00011",
+           "id": "5a0001a",
            "elType": "widget",
            "widgetType": "image",
            "isInner": false,
@@ -1201,7 +1201,7 @@
          ]
         },
         {
-         "id": "5a00014",
+         "id": "5a0001d",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1257,7 +1257,7 @@
          },
          "elements": [
           {
-           "id": "5a00013",
+           "id": "5a0001c",
            "elType": "widget",
            "widgetType": "image",
            "isInner": false,
@@ -1281,7 +1281,7 @@
      ]
     },
     {
-     "id": "5a00017",
+     "id": "5a00020",
      "elType": "widget",
      "widgetType": "text-editor",
      "isInner": false,
@@ -1307,7 +1307,7 @@
      "elements": []
     },
     {
-     "id": "5a0001a",
+     "id": "5a00023",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -1349,7 +1349,7 @@
      },
      "elements": [
       {
-       "id": "5a00018",
+       "id": "5a00021",
        "elType": "widget",
        "widgetType": "heading",
        "isInner": false,
@@ -1386,7 +1386,7 @@
        "elements": []
       },
       {
-       "id": "5a00019",
+       "id": "5a00022",
        "elType": "widget",
        "widgetType": "image-carousel",
        "isInner": false,
@@ -1612,7 +1612,7 @@
      "elements": []
     },
     {
-     "id": "5a00020",
+     "id": "5a00029",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -1645,7 +1645,7 @@
      },
      "elements": [
       {
-       "id": "5a0001e",
+       "id": "5a00027",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1674,7 +1674,7 @@
        },
        "elements": [
         {
-         "id": "5a0001c",
+         "id": "5a00025",
          "elType": "widget",
          "widgetType": "image",
          "isInner": false,
@@ -1700,7 +1700,7 @@
        ]
       },
       {
-       "id": "5a0001f",
+       "id": "5a00028",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1727,7 +1727,7 @@
        },
        "elements": [
         {
-         "id": "5a0001d",
+         "id": "5a00026",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2360,7 +2360,7 @@
    ]
   },
   {
-   "id": "5a00057",
+   "id": "5a00060",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -2410,7 +2410,7 @@
    },
    "elements": [
     {
-     "id": "5a00056",
+     "id": "5a0005f",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -2470,7 +2470,7 @@
      },
      "elements": [
       {
-       "id": "5a00021",
+       "id": "5a0002a",
        "elType": "widget",
        "widgetType": "html",
        "isInner": false,
@@ -2482,7 +2482,7 @@
        "elements": []
       },
       {
-       "id": "5a00054",
+       "id": "5a0005d",
        "elType": "widget",
        "widgetType": "heading",
        "isInner": false,
@@ -2518,7 +2518,7 @@
        "elements": []
       },
       {
-       "id": "5a00055",
+       "id": "5a0005e",
        "elType": "widget",
        "widgetType": "heading",
        "isInner": false,
@@ -2549,7 +2549,7 @@
        "elements": []
       },
       {
-       "id": "5a00022",
+       "id": "5a0002b",
        "elType": "widget",
        "widgetType": "text-editor",
        "isInner": false,
@@ -2560,7 +2560,7 @@
        "elements": []
       },
       {
-       "id": "5a00023",
+       "id": "5a0002c",
        "elType": "widget",
        "widgetType": "heading",
        "isInner": false,
@@ -2592,7 +2592,7 @@
        "elements": []
       },
       {
-       "id": "5a0003d",
+       "id": "5a00046",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -2645,7 +2645,7 @@
        },
        "elements": [
         {
-         "id": "5a00028",
+         "id": "5a00031",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2697,7 +2697,7 @@
          },
          "elements": [
           {
-           "id": "5a00024",
+           "id": "5a0002d",
            "elType": "widget",
            "widgetType": "icon",
            "isInner": false,
@@ -2750,7 +2750,7 @@
            "elements": []
           },
           {
-           "id": "5a00027",
+           "id": "5a00030",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -2784,7 +2784,7 @@
            },
            "elements": [
             {
-             "id": "5a00025",
+             "id": "5a0002e",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -2816,7 +2816,7 @@
              "elements": []
             },
             {
-             "id": "5a00026",
+             "id": "5a0002f",
              "elType": "widget",
              "widgetType": "text-editor",
              "isInner": false,
@@ -2846,7 +2846,7 @@
          ]
         },
         {
-         "id": "5a0002d",
+         "id": "5a00036",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2898,7 +2898,7 @@
          },
          "elements": [
           {
-           "id": "5a00029",
+           "id": "5a00032",
            "elType": "widget",
            "widgetType": "icon",
            "isInner": false,
@@ -2951,7 +2951,7 @@
            "elements": []
           },
           {
-           "id": "5a0002c",
+           "id": "5a00035",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -2985,7 +2985,7 @@
            },
            "elements": [
             {
-             "id": "5a0002a",
+             "id": "5a00033",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -3017,7 +3017,7 @@
              "elements": []
             },
             {
-             "id": "5a0002b",
+             "id": "5a00034",
              "elType": "widget",
              "widgetType": "text-editor",
              "isInner": false,
@@ -3047,7 +3047,7 @@
          ]
         },
         {
-         "id": "5a00032",
+         "id": "5a0003b",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3099,7 +3099,7 @@
          },
          "elements": [
           {
-           "id": "5a0002e",
+           "id": "5a00037",
            "elType": "widget",
            "widgetType": "icon",
            "isInner": false,
@@ -3152,7 +3152,7 @@
            "elements": []
           },
           {
-           "id": "5a00031",
+           "id": "5a0003a",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -3186,7 +3186,7 @@
            },
            "elements": [
             {
-             "id": "5a0002f",
+             "id": "5a00038",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -3218,7 +3218,7 @@
              "elements": []
             },
             {
-             "id": "5a00030",
+             "id": "5a00039",
              "elType": "widget",
              "widgetType": "text-editor",
              "isInner": false,
@@ -3248,7 +3248,7 @@
          ]
         },
         {
-         "id": "5a00037",
+         "id": "5a00040",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3300,7 +3300,7 @@
          },
          "elements": [
           {
-           "id": "5a00033",
+           "id": "5a0003c",
            "elType": "widget",
            "widgetType": "icon",
            "isInner": false,
@@ -3353,7 +3353,7 @@
            "elements": []
           },
           {
-           "id": "5a00036",
+           "id": "5a0003f",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -3387,7 +3387,7 @@
            },
            "elements": [
             {
-             "id": "5a00034",
+             "id": "5a0003d",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -3419,7 +3419,7 @@
              "elements": []
             },
             {
-             "id": "5a00035",
+             "id": "5a0003e",
              "elType": "widget",
              "widgetType": "text-editor",
              "isInner": false,
@@ -3449,7 +3449,7 @@
          ]
         },
         {
-         "id": "5a0003c",
+         "id": "5a00045",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3501,7 +3501,7 @@
          },
          "elements": [
           {
-           "id": "5a00038",
+           "id": "5a00041",
            "elType": "widget",
            "widgetType": "icon",
            "isInner": false,
@@ -3554,7 +3554,7 @@
            "elements": []
           },
           {
-           "id": "5a0003b",
+           "id": "5a00044",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -3588,7 +3588,7 @@
            },
            "elements": [
             {
-             "id": "5a00039",
+             "id": "5a00042",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -3620,7 +3620,7 @@
              "elements": []
             },
             {
-             "id": "5a0003a",
+             "id": "5a00043",
              "elType": "widget",
              "widgetType": "text-editor",
              "isInner": false,
@@ -3652,7 +3652,7 @@
        ]
       },
       {
-       "id": "5a0003e",
+       "id": "5a00047",
        "elType": "widget",
        "widgetType": "icon",
        "isInner": false,
@@ -3673,7 +3673,7 @@
        "elements": []
       },
       {
-       "id": "5a00050",
+       "id": "5a00059",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -3722,7 +3722,7 @@
        },
        "elements": [
         {
-         "id": "5a0003f",
+         "id": "5a00048",
          "elType": "widget",
          "widgetType": "heading",
          "isInner": false,
@@ -3755,7 +3755,7 @@
          "elements": []
         },
         {
-         "id": "5a0004c",
+         "id": "5a00055",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3800,7 +3800,7 @@
          },
          "elements": [
           {
-           "id": "5a00042",
+           "id": "5a0004b",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -3825,7 +3825,7 @@
            },
            "elements": [
             {
-             "id": "5a00040",
+             "id": "5a00049",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -3861,7 +3861,7 @@
              "elements": []
             },
             {
-             "id": "5a00041",
+             "id": "5a0004a",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -3894,7 +3894,7 @@
            ]
           },
           {
-           "id": "5a00045",
+           "id": "5a0004e",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -3919,7 +3919,7 @@
            },
            "elements": [
             {
-             "id": "5a00043",
+             "id": "5a0004c",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -3955,7 +3955,7 @@
              "elements": []
             },
             {
-             "id": "5a00044",
+             "id": "5a0004d",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -3988,7 +3988,7 @@
            ]
           },
           {
-           "id": "5a00048",
+           "id": "5a00051",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4013,7 +4013,7 @@
            },
            "elements": [
             {
-             "id": "5a00046",
+             "id": "5a0004f",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -4049,7 +4049,7 @@
              "elements": []
             },
             {
-             "id": "5a00047",
+             "id": "5a00050",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -4082,7 +4082,7 @@
            ]
           },
           {
-           "id": "5a0004b",
+           "id": "5a00054",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4107,7 +4107,7 @@
            },
            "elements": [
             {
-             "id": "5a00049",
+             "id": "5a00052",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -4143,7 +4143,7 @@
              "elements": []
             },
             {
-             "id": "5a0004a",
+             "id": "5a00053",
              "elType": "widget",
              "widgetType": "heading",
              "isInner": false,
@@ -4178,7 +4178,7 @@
          ]
         },
         {
-         "id": "5a0004f",
+         "id": "5a00058",
          "elType": "widget",
          "widgetType": "icon-list",
          "isInner": false,
@@ -4187,7 +4187,7 @@
           "_css_classes": "st-result-checks",
           "icon_list": [
            {
-            "_id": "5a0004d",
+            "_id": "5a00056",
             "text": "Consistent terminology across all deliverables",
             "selected_icon": {
              "value": "fas fa-check",
@@ -4195,7 +4195,7 @@
             }
            },
            {
-            "_id": "5a0004e",
+            "_id": "5a00057",
             "text": "Full adherence to quality requirements",
             "selected_icon": {
              "value": "fas fa-check",
@@ -4239,7 +4239,7 @@
        ]
       },
       {
-       "id": "5a00053",
+       "id": "5a0005c",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -4273,7 +4273,7 @@
        },
        "elements": [
         {
-         "id": "5a00051",
+         "id": "5a0005a",
          "elType": "widget",
          "widgetType": "button",
          "isInner": false,
@@ -4346,7 +4346,7 @@
          "elements": []
         },
         {
-         "id": "5a00052",
+         "id": "5a0005b",
          "elType": "widget",
          "widgetType": "text-editor",
          "isInner": false,
@@ -4377,7 +4377,7 @@
    ]
   },
   {
-   "id": "5a0006e",
+   "id": "5a00077",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -4425,7 +4425,7 @@
    },
    "elements": [
     {
-     "id": "5a00069",
+     "id": "5a00072",
      "elType": "widget",
      "widgetType": "heading",
      "isInner": false,
@@ -4461,7 +4461,7 @@
      "elements": []
     },
     {
-     "id": "5a0006a",
+     "id": "5a00073",
      "elType": "widget",
      "widgetType": "text-editor",
      "isInner": false,
@@ -4492,7 +4492,7 @@
      "elements": []
     },
     {
-     "id": "5a0006d",
+     "id": "5a00076",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -4525,7 +4525,7 @@
      },
      "elements": [
       {
-       "id": "5a0006c",
+       "id": "5a00075",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -4552,7 +4552,7 @@
        },
        "elements": [
         {
-         "id": "5a00067",
+         "id": "5a00070",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -4583,270 +4583,6 @@
           }
          },
          "elements": [
-          {
-           "id": "5a0005a",
-           "elType": "container",
-           "isInner": true,
-           "settings": {
-            "flex_direction": "column",
-            "flex_gap": {
-             "column": "4",
-             "row": "4",
-             "isLinked": true,
-             "unit": "px",
-             "size": 4
-            },
-            "min_height": {
-             "unit": "px",
-             "size": 56,
-             "sizes": []
-            },
-            "css_classes": "st-proc-step",
-            "content_width": "full",
-            "padding": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
-             "isLinked": true
-            }
-           },
-           "elements": [
-            {
-             "id": "5a00058",
-             "elType": "widget",
-             "widgetType": "heading",
-             "isInner": false,
-             "settings": {
-              "title": "Inquiry & Order",
-              "header_size": "h3",
-              "align": "left",
-              "title_color": "#191919",
-              "typography_typography": "custom",
-              "typography_font_family": "Poppins",
-              "typography_font_weight": "600",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 19,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.35,
-               "sizes": []
-              },
-              "typography_font_size_mobile": {
-               "unit": "px",
-               "size": 17,
-               "sizes": []
-              }
-             },
-             "elements": []
-            },
-            {
-             "id": "5a00059",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "isInner": false,
-             "settings": {
-              "editor": "<p>Define requirements, language pairs, deadlines and any regulatory or confidentiality needs.</p>",
-              "align": "left",
-              "text_color": "#5C5C5C",
-              "typography_typography": "custom",
-              "typography_font_family": "Poppins",
-              "typography_font_weight": "400",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 15,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.65,
-               "sizes": []
-              }
-             },
-             "elements": []
-            }
-           ]
-          },
-          {
-           "id": "5a0005d",
-           "elType": "container",
-           "isInner": true,
-           "settings": {
-            "flex_direction": "column",
-            "flex_gap": {
-             "column": "4",
-             "row": "4",
-             "isLinked": true,
-             "unit": "px",
-             "size": 4
-            },
-            "min_height": {
-             "unit": "px",
-             "size": 56,
-             "sizes": []
-            },
-            "css_classes": "st-proc-step",
-            "content_width": "full",
-            "padding": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
-             "isLinked": true
-            }
-           },
-           "elements": [
-            {
-             "id": "5a0005b",
-             "elType": "widget",
-             "widgetType": "heading",
-             "isInner": false,
-             "settings": {
-              "title": "Assignment",
-              "header_size": "h3",
-              "align": "left",
-              "title_color": "#191919",
-              "typography_typography": "custom",
-              "typography_font_family": "Poppins",
-              "typography_font_weight": "600",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 19,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.35,
-               "sizes": []
-              },
-              "typography_font_size_mobile": {
-               "unit": "px",
-               "size": 17,
-               "sizes": []
-              }
-             },
-             "elements": []
-            },
-            {
-             "id": "5a0005c",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "isInner": false,
-             "settings": {
-              "editor": "<p>Select the best native linguists and subject experts for clinical, laboratory or device content.</p>",
-              "align": "left",
-              "text_color": "#5C5C5C",
-              "typography_typography": "custom",
-              "typography_font_family": "Poppins",
-              "typography_font_weight": "400",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 15,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.65,
-               "sizes": []
-              }
-             },
-             "elements": []
-            }
-           ]
-          },
-          {
-           "id": "5a00060",
-           "elType": "container",
-           "isInner": true,
-           "settings": {
-            "flex_direction": "column",
-            "flex_gap": {
-             "column": "4",
-             "row": "4",
-             "isLinked": true,
-             "unit": "px",
-             "size": 4
-            },
-            "min_height": {
-             "unit": "px",
-             "size": 56,
-             "sizes": []
-            },
-            "css_classes": "st-proc-step",
-            "content_width": "full",
-            "padding": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
-             "isLinked": true
-            }
-           },
-           "elements": [
-            {
-             "id": "5a0005e",
-             "elType": "widget",
-             "widgetType": "heading",
-             "isInner": false,
-             "settings": {
-              "title": "Translation & Localization",
-              "header_size": "h3",
-              "align": "left",
-              "title_color": "#191919",
-              "typography_typography": "custom",
-              "typography_font_family": "Poppins",
-              "typography_font_weight": "600",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 19,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.35,
-               "sizes": []
-              },
-              "typography_font_size_mobile": {
-               "unit": "px",
-               "size": 17,
-               "sizes": []
-              }
-             },
-             "elements": []
-            },
-            {
-             "id": "5a0005f",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "isInner": false,
-             "settings": {
-              "editor": "<p>Accurate, culturally adapted content built on approved glossaries and translation memories.</p>",
-              "align": "left",
-              "text_color": "#5C5C5C",
-              "typography_typography": "custom",
-              "typography_font_family": "Poppins",
-              "typography_font_weight": "400",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 15,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.65,
-               "sizes": []
-              }
-             },
-             "elements": []
-            }
-           ]
-          },
           {
            "id": "5a00063",
            "elType": "container",
@@ -4883,7 +4619,7 @@
              "widgetType": "heading",
              "isInner": false,
              "settings": {
-              "title": "Quality Assurance (QA)",
+              "title": "Inquiry & Order",
               "header_size": "h3",
               "align": "left",
               "title_color": "#191919",
@@ -4914,7 +4650,7 @@
              "widgetType": "text-editor",
              "isInner": false,
              "settings": {
-              "editor": "<p>Multi-step TEP review: translation, editing and proofreading by separate linguists.</p>",
+              "editor": "<p>Define requirements, language pairs, deadlines and any regulatory or confidentiality needs.</p>",
               "align": "left",
               "text_color": "#5C5C5C",
               "typography_typography": "custom",
@@ -4971,7 +4707,7 @@
              "widgetType": "heading",
              "isInner": false,
              "settings": {
-              "title": "Final Delivery",
+              "title": "Assignment",
               "header_size": "h3",
               "align": "left",
               "title_color": "#191919",
@@ -5002,6 +4738,270 @@
              "widgetType": "text-editor",
              "isInner": false,
              "settings": {
+              "editor": "<p>Select the best native linguists and subject experts for clinical, laboratory or device content.</p>",
+              "align": "left",
+              "text_color": "#5C5C5C",
+              "typography_typography": "custom",
+              "typography_font_family": "Poppins",
+              "typography_font_weight": "400",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 15,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.65,
+               "sizes": []
+              }
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "5a00069",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "4",
+             "row": "4",
+             "isLinked": true,
+             "unit": "px",
+             "size": 4
+            },
+            "min_height": {
+             "unit": "px",
+             "size": 56,
+             "sizes": []
+            },
+            "css_classes": "st-proc-step",
+            "content_width": "full",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
+           },
+           "elements": [
+            {
+             "id": "5a00067",
+             "elType": "widget",
+             "widgetType": "heading",
+             "isInner": false,
+             "settings": {
+              "title": "Translation & Localization",
+              "header_size": "h3",
+              "align": "left",
+              "title_color": "#191919",
+              "typography_typography": "custom",
+              "typography_font_family": "Poppins",
+              "typography_font_weight": "600",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 19,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.35,
+               "sizes": []
+              },
+              "typography_font_size_mobile": {
+               "unit": "px",
+               "size": 17,
+               "sizes": []
+              }
+             },
+             "elements": []
+            },
+            {
+             "id": "5a00068",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "isInner": false,
+             "settings": {
+              "editor": "<p>Accurate, culturally adapted content built on approved glossaries and translation memories.</p>",
+              "align": "left",
+              "text_color": "#5C5C5C",
+              "typography_typography": "custom",
+              "typography_font_family": "Poppins",
+              "typography_font_weight": "400",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 15,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.65,
+               "sizes": []
+              }
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "5a0006c",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "4",
+             "row": "4",
+             "isLinked": true,
+             "unit": "px",
+             "size": 4
+            },
+            "min_height": {
+             "unit": "px",
+             "size": 56,
+             "sizes": []
+            },
+            "css_classes": "st-proc-step",
+            "content_width": "full",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
+           },
+           "elements": [
+            {
+             "id": "5a0006a",
+             "elType": "widget",
+             "widgetType": "heading",
+             "isInner": false,
+             "settings": {
+              "title": "Quality Assurance (QA)",
+              "header_size": "h3",
+              "align": "left",
+              "title_color": "#191919",
+              "typography_typography": "custom",
+              "typography_font_family": "Poppins",
+              "typography_font_weight": "600",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 19,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.35,
+               "sizes": []
+              },
+              "typography_font_size_mobile": {
+               "unit": "px",
+               "size": 17,
+               "sizes": []
+              }
+             },
+             "elements": []
+            },
+            {
+             "id": "5a0006b",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "isInner": false,
+             "settings": {
+              "editor": "<p>Multi-step TEP review: translation, editing and proofreading by separate linguists.</p>",
+              "align": "left",
+              "text_color": "#5C5C5C",
+              "typography_typography": "custom",
+              "typography_font_family": "Poppins",
+              "typography_font_weight": "400",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 15,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.65,
+               "sizes": []
+              }
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "5a0006f",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "4",
+             "row": "4",
+             "isLinked": true,
+             "unit": "px",
+             "size": 4
+            },
+            "min_height": {
+             "unit": "px",
+             "size": 56,
+             "sizes": []
+            },
+            "css_classes": "st-proc-step",
+            "content_width": "full",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
+           },
+           "elements": [
+            {
+             "id": "5a0006d",
+             "elType": "widget",
+             "widgetType": "heading",
+             "isInner": false,
+             "settings": {
+              "title": "Final Delivery",
+              "header_size": "h3",
+              "align": "left",
+              "title_color": "#191919",
+              "typography_typography": "custom",
+              "typography_font_family": "Poppins",
+              "typography_font_weight": "600",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 19,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.35,
+               "sizes": []
+              },
+              "typography_font_size_mobile": {
+               "unit": "px",
+               "size": 17,
+               "sizes": []
+              }
+             },
+             "elements": []
+            },
+            {
+             "id": "5a0006e",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "isInner": false,
+             "settings": {
               "editor": "<p>On-time, ISO-compliant, ready-to-use files in the formats you need.</p>",
               "align": "left",
               "text_color": "#5C5C5C",
@@ -5028,7 +5028,7 @@
        ]
       },
       {
-       "id": "5a0006b",
+       "id": "5a00074",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -5057,7 +5057,7 @@
        },
        "elements": [
         {
-         "id": "5a00068",
+         "id": "5a00071",
          "elType": "widget",
          "widgetType": "image",
          "isInner": false,
@@ -5164,7 +5164,7 @@
      "elements": []
     },
     {
-     "id": "5a00073",
+     "id": "5a0007c",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -5197,7 +5197,7 @@
      },
      "elements": [
       {
-       "id": "5a00071",
+       "id": "5a0007a",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -5226,7 +5226,7 @@
        },
        "elements": [
         {
-         "id": "5a00070",
+         "id": "5a00079",
          "elType": "widget",
          "widgetType": "image",
          "isInner": false,
@@ -5244,7 +5244,7 @@
        ]
       },
       {
-       "id": "5a00072",
+       "id": "5a0007b",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -5271,7 +5271,7 @@
        },
        "elements": [
         {
-         "id": "5a0006f",
+         "id": "5a00078",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -5868,7 +5868,7 @@
    ]
   },
   {
-   "id": "5a0007d",
+   "id": "5a00086",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -5916,7 +5916,7 @@
    },
    "elements": [
     {
-     "id": "5a00074",
+     "id": "5a0007d",
      "elType": "widget",
      "widgetType": "heading",
      "isInner": false,
@@ -5952,7 +5952,7 @@
      "elements": []
     },
     {
-     "id": "5a00075",
+     "id": "5a0007e",
      "elType": "widget",
      "widgetType": "text-editor",
      "isInner": false,
@@ -5983,7 +5983,7 @@
      "elements": []
     },
     {
-     "id": "5a0007c",
+     "id": "5a00085",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -6028,7 +6028,7 @@
      },
      "elements": [
       {
-       "id": "5a00077",
+       "id": "5a00080",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -6082,7 +6082,7 @@
        },
        "elements": [
         {
-         "id": "5a00076",
+         "id": "5a0007f",
          "elType": "widget",
          "widgetType": "testimonial",
          "isInner": false,
@@ -6157,7 +6157,7 @@
        ]
       },
       {
-       "id": "5a00079",
+       "id": "5a00082",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -6211,7 +6211,7 @@
        },
        "elements": [
         {
-         "id": "5a00078",
+         "id": "5a00081",
          "elType": "widget",
          "widgetType": "testimonial",
          "isInner": false,
@@ -6286,7 +6286,7 @@
        ]
       },
       {
-       "id": "5a0007b",
+       "id": "5a00084",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -6340,7 +6340,7 @@
        },
        "elements": [
         {
-         "id": "5a0007a",
+         "id": "5a00083",
          "elType": "widget",
          "widgetType": "testimonial",
          "isInner": false,
